@@ -1,0 +1,14 @@
+{
+  "name": "intra-disenio",
+  "version": "1.0.0",
+  "description": "Nuevo diseño de la intranet Afimex",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "jagp",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
