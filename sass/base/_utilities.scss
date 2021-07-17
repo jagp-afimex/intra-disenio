@@ -1,0 +1,9 @@
+.rectangulo {
+    position: absolute;
+    width: 150rem;
+    height: 9rem;
+    transform: rotate(45deg);
+    right: 90rem;
+    top: -5rem;
+    background-color: $primary-color;
+}
