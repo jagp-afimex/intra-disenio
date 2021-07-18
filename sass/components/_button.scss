@@ -1,0 +1,24 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $color-white;
+        padding: .8rem 1rem;
+        background-color: $secondary-color;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 3rem;
+
+        transition: all .2s;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .5rem 2rem $color-shadow;
+    }
+}

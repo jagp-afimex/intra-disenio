@@ -13,15 +13,71 @@
 
 </head>
 <body>
-
-    <h1>Hola inciao de Sesión</h1>
     
-    <div class="rectangulo">
+    <div class="rect rectangulo-naranja">
     </div>
 
-    <div class="rectangulo-naranja-inverso">
-        
+    <div class="rect rectangulo-naranja-invertido">
     </div>
+
+    <div class="rect rectangulo-azul">
+    </div>
+
+    <div class="rect rectangulo-azul-invertido">
+    </div>
+
+    <div class="rect rectangulo-naranja-sec">
+    </div>
+
+    <div class="rect rectangulo-naranja-invertido-sec">
+    </div>
+
+    <div class="rect rectangulo-azul-sec">
+    </div>
+
+    <div class="rect rectangulo-azul-invertido-sec">
+    </div>
+
+    <main>
+        <div class="login">
+            <div class="login__logo-box">
+                <img src="img/afimex-logo.png" class="login__logo" alt="afimex logo">
+            </div>
+
+            <h1 class="login__heading">Inicio de Sesión</h1>
+
+            <form class="form" action="#">
+
+                <div class="form__group">
+                    <div class="form__box-icon">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg>
+                    </div>
+                    <label class="form__label" for="username">Usuario</label>
+                    <input class="form__input" type="text" placeholder="Usuario">
+
+                </div>
+
+                <div class="form__group">
+                    <div class="form__box-icon">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#icon-lock"></use>
+                        </svg>
+                    </div>
+                    <label class="form__label" for="password">Contraseña</label>
+                    <input class="form__input" type="password" placeholder="Contraseña">
+
+                </div>
+
+                <div class="form__group">
+                    <button class="btn">Iniciar Sesión</button>
+                </div>
+                
+            </form>
+
+        </div>
+    </main>
 
 </body>
 </html>

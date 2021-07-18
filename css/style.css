@@ -20,14 +20,134 @@ body {
   color: #000;
   padding: 3rem; }
 
-.rectangulo {
-  position: absolute;
-  width: 150rem;
-  height: 9rem;
-  transform: rotate(45deg);
-  right: 90rem;
-  top: -5rem;
-  background-color: #FF6B00; }
+.btn, .btn:link, .btn:visited {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: .8rem 1rem;
+  background-color: #005CB9;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 3rem;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 2rem #a0a0a0; }
+
+.form__group {
+  margin: 2.5rem 3rem; }
+
+.form__box-icon {
+  display: inline-block;
+  position: absolute; }
+
+.form__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: transparent;
+  stroke: #005CB9;
+  stroke-width: 1px;
+  vertical-align: baseline; }
+
+.form__label {
+  display: inline;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: #005CB9;
+  margin-left: 2.5rem; }
+
+.form__input {
+  display: block;
+  border: 1px solid #005CB9;
+  border-radius: 4px;
+  padding: .8rem 1rem;
+  width: 100%;
+  transition: all .2s; }
+  .form__input:focus {
+    outline: none;
+    border: 1px solid #FF6B00; }
 
 body {
   overflow-y: hidden; }
+
+.rect {
+  position: absolute;
+  width: 100rem;
+  height: 9rem;
+  z-index: -10; }
+
+.rectangulo-naranja {
+  transform: rotate(45deg);
+  background-color: #FF6B00;
+  top: 10rem;
+  right: 100rem; }
+
+.rectangulo-naranja-invertido {
+  transform: rotate(315deg);
+  top: 74.4rem;
+  background-color: #FF6B00;
+  right: 100rem; }
+
+.rectangulo-azul {
+  transform: rotate(45deg);
+  background-color: #005CB9;
+  top: 10rem;
+  right: 80rem; }
+
+.rectangulo-azul-invertido {
+  transform: rotate(315deg);
+  top: 74.4rem;
+  background-color: #005CB9;
+  right: 80rem; }
+
+.rectangulo-naranja-sec {
+  transform: rotate(45deg);
+  background-color: #FF6B00;
+  top: 10rem;
+  right: 10rem; }
+
+.rectangulo-naranja-invertido-sec {
+  transform: rotate(315deg);
+  top: 74.4rem;
+  background-color: #FF6B00;
+  right: 10rem; }
+
+.rectangulo-azul-sec {
+  transform: rotate(45deg);
+  background-color: #005CB9;
+  top: 10rem;
+  right: -10rem; }
+
+.rectangulo-azul-invertido-sec {
+  transform: rotate(315deg);
+  top: 74.5rem;
+  background-color: #005CB9;
+  right: -10rem; }
+
+.login {
+  position: absolute;
+  width: 25%;
+  height: 80%;
+  border-radius: .4rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #a0a0a0;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%); }
+  .login__logo-box {
+    display: block;
+    text-align: center;
+    padding-top: 4rem; }
+  .login__logo {
+    width: 70%; }
+  .login__heading {
+    color: #005CB9;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem; }

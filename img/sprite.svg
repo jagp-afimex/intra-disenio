@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-lock" viewBox="0 0 32 32">
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M5.333 10.667h21.333c1.473 0 2.667 1.194 2.667 2.667v13.333c0 1.473-1.194 2.667-2.667 2.667h-21.333c-1.473 0-2.667-1.194-2.667-2.667v-13.333c0-1.473 1.194-2.667 2.667-2.667z"></path>
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M19.333 18c0 1.841-1.492 3.333-3.333 3.333s-3.333-1.492-3.333-3.333c0-1.841 1.492-3.333 3.333-3.333s3.333 1.492 3.333 3.333z"></path>
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M8.667 10.667v-5.333c0-1.473 1.194-2.667 2.667-2.667v0h8c1.473 0 2.667 1.194 2.667 2.667v0 5.333"></path>
+</symbol>
+<symbol id="icon-user" viewBox="0 0 32 32">
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M4 29.347l1.053-3.84c3.48-12.667 18.413-12.667 21.893 0l1.053 3.84"></path>
+<path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="bevel" d="M22.667 9.32c0 3.682-2.985 6.667-6.667 6.667s-6.667-2.985-6.667-6.667c0-3.682 2.985-6.667 6.667-6.667s6.667 2.985 6.667 6.667z"></path>
+</symbol>
+</defs>
+</svg>

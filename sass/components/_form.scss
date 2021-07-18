@@ -1,0 +1,44 @@
+.form {  
+
+    &__group {
+        margin: 2.5rem 3rem;
+    }
+
+    &__box-icon {
+        display: inline-block;
+        position: absolute;
+    }
+    
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: transparent;
+        stroke: $secondary-color;
+        stroke-width: 1px;
+        vertical-align: baseline;
+    }
+
+    &__label {
+        display: inline;
+        vertical-align: middle;
+        font-size: 1.5rem;
+        color: $secondary-color;
+        margin-left: 2.5rem;
+    }
+    
+    &__input {
+        display: block;
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+        padding: .8rem 1rem;
+        width: 100%;
+
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $primary-color;
+        }
+    }
+
+}
