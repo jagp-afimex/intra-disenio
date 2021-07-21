@@ -1,5 +1,9 @@
 .sidebar {
     background-color: $primary-color;
-    flex: 0 0 10%;
-    height: 100%;
+    
+    flex: 0 0 100%;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
 }

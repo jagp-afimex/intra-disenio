@@ -1,0 +1,20 @@
+.sidebar {
+    &__btn {
+        text-decoration: none;
+        color: $color-white;
+        width: inherit;
+        transition: .2s all;
+    
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+    
+    &__btn-icon {
+        width: 2rem;
+        height: 2rem;
+        stroke: $color-white;
+        fill: transparent;
+    }
+
+}

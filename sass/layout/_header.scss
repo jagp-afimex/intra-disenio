@@ -8,7 +8,7 @@
 
 .header__logo {
     width: 10%;
-    margin-left: 1%;
+    margin-left: .5%;
 }
 
 .logout-container {
@@ -18,10 +18,9 @@
 
 .logout
 {
-
     &__button {
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: 1.4rem;
+        font-weight: 600;
         color: $color-white;
         border: none;
         background-color: transparent;
@@ -37,8 +36,8 @@
     
     &__icon {
         width: 3rem;
-        padding-right: 1%;
         height: 3rem;
+        padding-right: 1rem;
         fill: transparent;
         stroke: $color-white;
         stroke-width: .1rem;

@@ -4,14 +4,14 @@
 
     &__input {
         background-color: $primary-color;
+        font-size: 1.2rem;
         color: $color-white;
-        font-size: 1.3rem;
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
         width: 70%;
         border: solid .1rem $color-white;
         border-right: none;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
+        border-top-left-radius: .7rem;
+        border-bottom-left-radius: .7rem;
 
         transition: .2s all;
 
@@ -32,8 +32,8 @@
         background-color: transparent;
         border: solid .1rem $color-white;
         border-left: none;
-        border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
+        border-top-right-radius: .7rem;
+        border-bottom-right-radius: .7rem;
         margin-left: 0;
         padding-left: 1.2rem;
         padding-right: 1rem;
@@ -49,11 +49,11 @@
     }
 
     &__icon {
-        width: 2rem;
-        height: 2rem;
-        fill: transparent;
+        width: 1.5rem;
+        height: 1.5rem;
         stroke: $color-white;
         stroke-width: .1rem;
+        fill: transparent;
     }
 
     // &__input:focus + &__icon {
