@@ -1,4 +1,4 @@
-body {
+.body-login {
     overflow-y: hidden;
 }
 
@@ -18,8 +18,8 @@ body {
 
 .rectangulo-naranja-invertido {
     transform: rotate(315deg);
-    top: 74.4rem;
     background-color: $primary-color;
+    top: 74.4rem;
     right: 100rem;
 }
 
@@ -60,7 +60,7 @@ body {
 
 .rectangulo-azul-invertido-sec {
     transform: rotate(315deg);
-    top: 74.5rem;
+    top: 74.4rem;
     background-color: $secondary-color;
     right: -10rem;
 }

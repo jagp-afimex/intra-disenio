@@ -17,8 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #000;
-  padding: 3rem; }
+  color: #000; }
 
 .btn, .btn:link, .btn:visited {
   font-family: 'Poppins', sans-serif;
@@ -71,7 +70,21 @@ body {
     outline: none;
     border: 1px solid #FF6B00; }
 
-body {
+.flex-container {
+  display: flex; }
+
+.header {
+  background-color: #FF6B00; }
+
+.main-content {
+  background-color: #a0a0a0;
+  flex: 1; }
+
+.sidebar {
+  background-color: #FF6B00;
+  flex: 0 0 10%; }
+
+.body-login {
   overflow-y: hidden; }
 
 .rect {
@@ -88,8 +101,8 @@ body {
 
 .rectangulo-naranja-invertido {
   transform: rotate(315deg);
-  top: 74.4rem;
   background-color: #FF6B00;
+  top: 74.4rem;
   right: 100rem; }
 
 .rectangulo-azul {
@@ -124,7 +137,7 @@ body {
 
 .rectangulo-azul-invertido-sec {
   transform: rotate(315deg);
-  top: 74.5rem;
+  top: 74.4rem;
   background-color: #005CB9;
   right: -10rem; }
 
