@@ -13,12 +13,14 @@
         border-radius: 4px;
         cursor: pointer;
         margin-top: 3rem;
+        
+        backface-visibility: hidden;
 
         transition: all .2s;
     }
 
     &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 .5rem 2rem $color-shadow;
+        transform: translateY(-.2rem);
+        box-shadow: 0 .1rem .5rem $color-shadow;
     }
 }

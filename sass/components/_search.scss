@@ -1,0 +1,66 @@
+.search {
+    flex: 0 0 40%;
+    display: flex;
+
+    &__input {
+        background-color: $primary-color;
+        color: $color-white;
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        width: 70%;
+        border: solid .1rem $color-white;
+        border-right: none;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+
+        transition: .2s all;
+
+        &:focus {
+            outline: none;
+            color: black;
+            background-color: $color-white;
+            border: solid .1rem $secondary-color;
+            border-right: none;
+        }
+
+        &::placeholder {
+            color: $color-white;
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        border: solid .1rem $color-white;
+        border-left: none;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        margin-left: 0;
+        padding-left: 1.2rem;
+        padding-right: 1rem;
+
+        transition: .2s all;
+    }
+
+    // los estilos se aplican al boton cuando el input esta en focus
+    &__input:focus + &__button {
+        border: solid .1rem $secondary-color;
+        background-color: $secondary-color;
+        border-left: none;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: transparent;
+        stroke: $color-white;
+        stroke-width: .1rem;
+    }
+
+    // &__input:focus + &__icon {
+    //     fill: transparent;
+    //     stroke: $primary-color;
+    //     stroke-width: .1rem;
+    // }
+
+}
+

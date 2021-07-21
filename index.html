@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
-        <img src="img/afimex-logo.png" alt="logo-afimex">
+        <img class="header__logo" src="img/afimex-logo-header.png" alt="afimex logo">
 
         <form action="#" class="search">
-            <input class="search__input" type="text" placeholder="Buscar en intranet...">
+            <input class="search__input" type="text" placeholder="Búsqueda en intranet...">
             <button class="search__button" type="button">
-                <!-- search__icon -->
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
             </button>
         </form>
 
-        <!-- Salir -->
+        <div class="logout-container">
+            <form action="#" class="logout">
+                <button class="logout__button" type="button">
+                    Salir
+                    <svg class="logout__icon">
+                        <use xlink:href="img/sprite.svg#icon-logout"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
 
     </header>
     <div class="flex-container">
