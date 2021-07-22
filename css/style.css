@@ -41,16 +41,28 @@ body {
 .sidebar__btn {
   text-decoration: none;
   color: #ffffff;
-  width: inherit;
+  padding: 1rem;
+  width: auto;
+  height: calc(90vh / 6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   transition: .2s all; }
   .sidebar__btn:hover {
     background-color: #005CB9; }
 
 .sidebar__btn-icon {
-  width: 2rem;
-  height: 2rem;
-  stroke: #ffffff;
-  fill: transparent; }
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: transparent;
+  stroke: #ffffff; }
+
+.sidebar__btn-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: .5rem; }
 
 .form__group {
   margin: 2.5rem 3rem; }
@@ -171,8 +183,10 @@ body {
 
 .sidebar {
   background-color: #FF6B00;
-  flex: 0 0 100%;
-  flex-direction: column; }
+  flex: 0 0 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .body-login {
   overflow-y: hidden; }

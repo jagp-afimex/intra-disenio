@@ -2,19 +2,35 @@
     &__btn {
         text-decoration: none;
         color: $color-white;
-        width: inherit;
+        padding: 1rem;
+        width: auto;
+        height: calc(90vh / 6);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
         transition: .2s all;
-    
+
         &:hover {
             background-color: $secondary-color;
         }
     }
     
     &__btn-icon {
-        width: 2rem;
-        height: 2rem;
-        stroke: $color-white;
+        width: 3.5rem;
+        height: 3.5rem;
         fill: transparent;
+        stroke: $color-white;
+        // stroke-width: 1rem;
+    }
+
+    &__btn-text {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: .5rem;
     }
 
 }
