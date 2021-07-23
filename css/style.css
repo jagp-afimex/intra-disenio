@@ -1,3 +1,17 @@
+/* ------
+    0 - 600px:      Phone
+    600 - 900px:    Tablet portrait
+    900 - 1200px:   Tablet landscape
+    [1200 - 1800] is where our normal styles apply
+    1800px + :      Big desktop
+    $breakpoint arguement choices:
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+    ORDER: Base + typography > general layout + grid > page layout > components
+    1em = 10px
+----- */
 *,
 *::after,
 *::before {
@@ -11,8 +25,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  overflow: hidden; }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -52,7 +65,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.2rem);
-  box-shadow: 0 0.1rem 0.5rem rgba(82, 82, 82, 0.7); }
+  box-shadow: 0 0.1rem 0.5rem rgba(71, 71, 71, 0.7); }
 
 .sidebar__btn {
   display: block;
@@ -77,7 +90,7 @@ body {
     stroke: #ffffff;
     text-align: center; }
   .sidebar__link-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin-top: .5rem; }
 
@@ -91,6 +104,27 @@ body {
 
 .sidebar .icon-afimex + span {
   margin-top: -2rem; }
+
+.comments {
+  background-color: khaki; }
+  .comments__button {
+    border: none;
+    background-color: #005CB9;
+    color: #ffffff;
+    font-weight: 100;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: .7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center; }
+    .comments__button-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: transparent;
+      stroke: #ffffff;
+      margin-right: .5rem; }
 
 .form__group {
   margin: 2.5rem 3rem; }
@@ -125,8 +159,34 @@ body {
     outline: none;
     border: 1px solid #FF6B00; }
 
-.carrousel__arrow-prev svg {
-  fill: cadetblue; }
+.carrousel {
+  max-width: 60vw;
+  transform: translateX(50%);
+  box-shadow: 0 0.1rem 0.7rem rgba(71, 71, 71, 0.7); }
+
+.splide__slide__container img {
+  width: 100%;
+  height: auto; }
+
+.splide__arrow-custom {
+  font-size: 1.2rem; }
+
+.splide__arrow-custom-prev {
+  background-color: transparent;
+  fill: #000000; }
+
+.splide__arrow-custom-next {
+  background-color: transparent;
+  fill: #000000; }
+
+.splide__pagination-custom {
+  background-color: transparent; }
+
+.splide__pagination__page {
+  background-color: #005CB9; }
+
+.splide__pagination__page.is-active {
+  background-color: #FF6B00; }
 
 .search {
   flex: 0 0 40%;
@@ -357,7 +417,7 @@ body {
   height: 80%;
   border-radius: .4rem;
   background-color: #ffffff;
-  box-shadow: 0.1rem 0.2rem 1rem rgba(82, 82, 82, 0.7);
+  box-shadow: 0 0.1rem 0.7rem rgba(71, 71, 71, 0.7);
   top: 50%;
   left: 50%;
   z-index: 10;

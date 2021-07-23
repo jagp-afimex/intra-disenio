@@ -1,19 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
     new Splide(".splide", {
         rewind: true,
-        fixedWidth: "30rem",
-        fixedHeight: "30rem",
+        perPage: 1,
         start: 0,
-        arrowPath: "M13.067 22.347l5.48-5.48c0.24-0.241 0.388-0.573 0.388-0.94s-0.148-0.699-0.388-0.94l-5.333-5.333",
         autoplay: true,
         classes: {
-            // arrows: "splide__arrows carrousel__arrows",
-            arrow: "splide__arrow ",
-            prev  : 'splide__arrow--prev carrousel__arrow',
+            arrow : 'splide__arrow splide__arrow-custom',
+            prev  : 'splide__arrow--prev splide__arrow-custom-prev',
+            next  : 'splide__arrow--next splide__arrow-custom-next',
+            pagination: 'splide__pagination splide__pagination-custom', 
+            page  : 'splide__pagination__page splide__pagination__page-custom', 
         },
         // type: "loop",
-        // width: "50%",
-        // height: "100%",
+        width: "inherit",
+        height: "45vh",
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pagination: true
 
     }).mount();
 });

@@ -1,0 +1,26 @@
+.comments {
+    background-color: khaki;
+    // position: relatives;
+
+    &__button {
+        border: none;
+        background-color: $secondary-color;
+        color: $color-white;
+        font-weight: $thin;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: .7rem;
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: center;
+
+        &-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: transparent;
+            stroke: $color-white;
+            margin-right: .5rem;
+        }
+    }
+}
