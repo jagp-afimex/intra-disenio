@@ -12,27 +12,27 @@
 .rectangulo-naranja {
     transform: rotate(45deg);
     background-color: $primary-color;
-    top: 10rem;
+    top: 15rem;
     right: 100rem;
 }
 
 .rectangulo-naranja-invertido {
     transform: rotate(315deg);
     background-color: $primary-color;
-    top: 74.4rem;
+    top: 79.4rem;
     right: 100rem;
 }
 
 .rectangulo-azul {
     transform: rotate(45deg);
     background-color: $secondary-color;
-    top: 10rem;
+    top: 15rem;
     right: 80rem;
 }
 
 .rectangulo-azul-invertido {
     transform: rotate(315deg);
-    top: 74.4rem;
+    top: 79.4rem;
     background-color: $secondary-color;
     right: 80rem;
 }
@@ -40,13 +40,13 @@
 .rectangulo-naranja-sec {
     transform: rotate(45deg);
     background-color: $primary-color;
-    top: 10rem;
+    top: 15rem;
     right: 10rem;
 }
 
 .rectangulo-naranja-invertido-sec {
     transform: rotate(315deg);
-    top: 74.4rem;
+    top: 79.4rem;
     background-color: $primary-color;
     right: 10rem;
 }
@@ -54,21 +54,23 @@
 .rectangulo-azul-sec {
     transform: rotate(45deg);
     background-color: $secondary-color;
-    top: 10rem;
+    top: 15rem;
     right: -10rem;
 }
 
 .rectangulo-azul-invertido-sec {
     transform: rotate(315deg);
-    top: 74.4rem;
+    top: 79.4rem;
     background-color: $secondary-color;
     right: -10rem;
 }
 
 .login {
     position: absolute;
-    width: 25%;
-    height: 80%;
+    width: 35rem;
+    // width: 25%;
+    // height: 80%;
+    height: 53rem;
     border-radius: .4rem;
     background-color: $color-white;
     // box-shadow: .1rem .1rem 1rem .1rem $color-shadow;

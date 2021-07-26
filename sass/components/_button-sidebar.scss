@@ -1,8 +1,8 @@
-.sidebar {
-    &__btn {
+.sidebar-nav {
+    &__item {
         display: block;
-        height: calc(97.5% / 10);
-
+        // width: 100%;
+        height: calc(inherit/ 10);
         transition: .2s all;
         
         &:hover {
@@ -22,8 +22,8 @@
         align-items: center;
         
         &-icon {
-            width: 3.5rem;
-            height: 3.5rem;
+            width: 3rem;
+            height: 3rem;
             fill: transparent;
             stroke: $color-white;
             text-align: center;
@@ -31,24 +31,30 @@
 
         &-text {
             // text-align: center;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: $medium;
             margin-top: .5rem;
+            // display: none;
+            // visibility: hidden;
+        }
+
+        &:hover {
+            color: $color-white;
         }
     }
 
-    .icon-ti {
-        padding-top: 2rem;
-    }
+    // .icon-ti {
+    //     padding-top: 2rem;
+    // }
 
     .icon-afimex {
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
         margin-top: -1.3rem;
     }
 
     .icon-afimex + span {
-        margin-top: -2rem;
+        margin-top: -1rem;
     }
 
 }

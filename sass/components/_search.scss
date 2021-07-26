@@ -7,11 +7,11 @@
         font-size: 1.2rem;
         color: $color-white;
         padding: 1rem 1.5rem;
-        width: 70%;
+        width: 100%;
         border: solid .1rem $color-white;
         border-right: none;
-        border-top-left-radius: .7rem;
-        border-bottom-left-radius: .7rem;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
 
         transition: .2s all;
 
@@ -55,12 +55,6 @@
         stroke-width: .1rem;
         fill: transparent;
     }
-
-    // &__input:focus + &__icon {
-    //     fill: transparent;
-    //     stroke: $primary-color;
-    //     stroke-width: .1rem;
-    // }
 
 }
 

@@ -1,214 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intranet Afimex - Inicio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intranet Afimex - Inicio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/splide-2.4.21/splide.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <script src="js/splide-2.4.21/splide.min.js"></script>
-    <script src="js/splide-2.4.21/main.js"></script>
-    <script src="js/home.js"></script>
+  <link rel="stylesheet" href="css/splide-2.4.21/splide.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/splide-2.4.21/splide.min.js"></script>
+  <script src="js/splide-2.4.21/main.js"></script>
 </head>
+
 <body>
-    <header class="header">
-        <img class="header__logo" src="img/afimex-logo-header.png" alt="afimex logo">
 
-        <form action="index.html" class="search">
-            <input class="search__input" type="text" placeholder="Búsqueda en intranet...">
-            <button class="search__button" type="submit">
-                <svg class="search__icon">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                </svg>
+
+
+
+
+  <header class="header">
+    <img class="header__logo" src="img/afimex-logo-header.png" alt="afimex logo">
+
+    <form action="index.html" class="search">
+      <input class="search__input" type="text" placeholder="Búsqueda en intranet...">
+      <button class="search__button" type="submit">
+        <svg class="search__icon">
+          <use xlink:href="img/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <div class="user-nav">
+      <span class="user-nav__username">PVALLEJO</span>
+      <svg class="user-nav__arrow">
+        <use xlink:href="img/sprite.svg#icon-chevron"></use>
+      </svg>
+      <ul class="user-nav__list">
+        <li class="user-nav__list-item">
+          <form action="#" class="logout">
+            <button class="logout__button" type="submit">
+              Salir
+              <svg class="logout__icon">
+                <use xlink:href="img/sprite.svg#icon-logout"></use>
+              </svg>
             </button>
-        </form>
-
-        <div class="logout-container">
-            <form action="index.html" class="logout">
-                <button class="logout__button" type="button">
-                    Salir
-                    <svg class="logout__icon">
-                        <use xlink:href="img/sprite.svg#icon-logout"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </header>
-    <div class="flex-container">
-        <nav class="sidebar">
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-bill"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Administración</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-xcustomer"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Atención a Clientes</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-commercial"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Comercial</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-improvement"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Mejora continua</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-ops"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Operaciones</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-user"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Recursos Humanos</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link icon-ti">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-ti"></use>
-                    </svg>
-                    <span class="sidebar__link-text">TI</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon icon-afimex">
-                        <use xlink:href="img/sprite.svg#icon-afimex"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Servicios Afimex</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-ups"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Servicios UPS</span>
-                </a>
-            </li>
-            <li class="sidebar__btn">
-                <a href="#" class="sidebar__link">
-                    <svg class="sidebar__link-icon">
-                        <use xlink:href="img/sprite.svg#icon-settings"></use>
-                    </svg>
-                    <span class="sidebar__link-text">Administración Intranet</span>
-                </a>
-            </li>
-
-            <!-- <a href="#" class="sidebar__btn">
-                <svg class="sidebar__btn-icon">
-                    <use xlink:href="img/sprite.svg#icon-bill"></use>
-                </svg>
-                <span class="sidebar__btn-text">Administración</span>
-            </a> -->
-
-        </nav>
-        <main class="main-content section group">
-
-            <div class="section group">
-                <h1 class="primary-heading">Buenos días, Pedro Vallejo</h1>
-            </div>
-
-            <div class="section groups">
-                <h3 class="secondary-heading">Últimos Comunicados</h4>
-            </div>
-
-            <div class="section group">
-                <div class="col span_6_of_12">
-                    <div class="carrousel">
-                        <div class="splide">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <div class="splide__slide__container">
-                                            <img src="img/afimex-logo-header.png" alt="">
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="splide__slide__container">
-                                            <img src="img/comunicado.png" alt="">
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="splide__slide__container">
-                                            <img src="img/afimex-logo.png" alt="">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col span_6_of_12">
-                <div class="comments">
-                    <button type="button" class="comments__button">
-                        <svg class="comments__button-icon">
-                            <use xlink:href="img/sprite.svg#icon-comments"></use>
-                        </svg>
-                        Comentarios
-                    </button>
-                </div>
-            </div>
-
-            <div class="section group">
-                <h5 class="tertiary-heading">Enlaces destacados</h5>
-            </div>
-
-            <div class="section group">
-                <div class="col span_3_of_12">
-                    sflñ
-                </div>
-    
-                <div class="col span_3_of_12">
-                    alekep
-                </div>
-    
-                <div class="col span_3_of_12">
-                    alekep
-                </div>
-                
-                <div class="col span_3_of_12">
-                    alekep
-                </div>
-            </div>
-
-
-
-            <!-- <div class="comments">
-                <h5>Comentarios - Día de Muertos</h5>
-                <hr>
-            </div> -->
-        </main>
+          </form>
+        </li>
+      </ul>
+      <div class="user-nav__options-container">
+      </div>
     </div>
+
+    <!-- <div class="logout-container">
+      <form action="index.html" class="logout">
+        <button class="logout__button" type="button">
+          Salir
+          <svg class="logout__icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </button>
+      </form>
+    </div> -->
+  </header>
+  <div class="flex-container">
+    <nav class="sidebar">
+      <ul id="sidebar" class="sidebar-nav">
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-bill"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Administración</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-xcustomer"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Atención a Clientes</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-commercial"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Comercial</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-improvement"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Mejora continua</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-ops"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Operaciones</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-user"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Recursos Humanos</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link icon-ti">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-ti"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">TI</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon icon-afimex">
+              <use xlink:href="img/sprite.svg#icon-afimex"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Servicios Afimex</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-ups"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Servicios UPS</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-settings"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Administración Intranet</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main class="main-content p-3">
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="h1">Buenos días, Pedro Vallejo</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h2">Últimos Comunicados</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="carrousel">
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img src="img/afimex-logo-header.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img src="img/comunicado.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img src="img/afimex-logo.png" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="comments">
+            <button type="button" class="comments__button">
+              <svg class="comments__button-icon">
+                <use xlink:href="img/sprite.svg#icon-comments"></use>
+              </svg>
+              Comentarios
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="h3">Enlaces destacados</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          sflñ
+        </div>
+        <div class="col-3">
+          alekep
+        </div>
+        <div class="col-3">
+          alekep
+        </div>
+        <div class="col-3">
+          alekep
+        </div>
+      </div>
+
+
+
+    </main>
+  </div>
+
+  <script src="js/home.js"></script>
 </body>
+
 </html>
+
+<!-- 
+<nav class="navbar navbar-light bg-light">
+  <div class="d-flex flex-row justify-content-between align-items-center">
+    <img class="header__logo" src="img/afimex-logo-header.png" alt="afimex logo">
+
+    <form action="index.html" class="search">
+      <input class="search__input" type="text" placeholder="Búsqueda en intranet...">
+      <button class="search__button" type="submit">
+        <svg class="search__icon">
+          <use xlink:href="img/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <div class="logout-container">
+      <form action="index.html" class="logout">
+        <button class="logout__button" type="button">
+          Salir
+          <svg class="logout__icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="d-flex flex-column d-flex justify-content-center flex-shrink-0 sidebar">
+  <ul class="sidebar">
+    <li class="sidebar__btn">
+      <a href="#" class="sidebar__link">
+        <svg class="sidebar__link-icon">
+          <use xlink:href="img/sprite.svg#icon-bill"></use>
+        </svg>
+        <span class="sidebar__link-text">Administración</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<main>
+
+</main> -->

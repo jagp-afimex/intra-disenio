@@ -1,3 +1,15 @@
+// Forma 1 - importar todo bootstrap y mofificarlo
+// editar primero todo
+// $theme-colors: (
+//     "primary": #521751,
+//     "danger": rgb(216, 212, 7)
+// );
+
+// $border-radius : 10rem;
+
+// este import siempre va despues de la edicion de los elmentos de bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -15,7 +27,7 @@
 @import "components/search";
 
 @import "layout/flex-container";
-@import "layout/grid";
+// @import "layout/grid";
 @import "layout/header";
 @import "layout/main-content";
 @import "layout/sidebar";
