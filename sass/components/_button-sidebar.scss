@@ -2,11 +2,23 @@
     &__item {
         display: block;
         // width: 100%;
-        height: calc(inherit/ 10);
         transition: .2s all;
         
         &:hover {
             background-color: $secondary-color;
+        }
+
+        @include respond(phone) {
+            // width: calc(1000px / 10);
+            // align-self: stretch;
+            // margin: 0;
+
+        
+            padding: 1rem;
+            // height: 220px;
+
+            // display: flex;
+            // align-self: baseline;
         }
     }
 
@@ -27,6 +39,11 @@
             fill: transparent;
             stroke: $color-white;
             text-align: center;
+
+            // @include respond(phone) {
+            //     width: 2rem;
+            //     height: 2rem;
+            // }
         }
 
         &-text {
@@ -34,8 +51,12 @@
             font-size: 1rem;
             font-weight: $medium;
             margin-top: .5rem;
-            // display: none;
             // visibility: hidden;
+
+            // @include respond(phone) {
+            //     // display: none;
+            //     font-size: .5rem;
+            // }
         }
 
         &:hover {
@@ -51,6 +72,11 @@
         width: 6rem;
         height: 6rem;
         margin-top: -1.3rem;
+
+        @include respond(phone) {
+            width: 4rem;
+            height: 4rem;
+        }
     }
 
     .icon-afimex + span {

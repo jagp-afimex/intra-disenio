@@ -1,48 +1,46 @@
 .sidebar {
-    // background-color: $primary-color;
-    // list-style: none;
-    // padding: 0;
-    // height: 92vh;
-    
-    // flex: 0 0 auto;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    
-    // transition: font-size 10s;
     background-color: $primary-color;
     flex: 0 0 8%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    @include respond(phone) {
+        // flex: 1;
+        overflow-y: scroll;
+        order: 1;
+        // align-content: flex-end;
+        // align-items: center;
+        // margin-top: auto;
+    }
+
     
     &-nav {
         font-size: 1.4rem;
         list-style: none;
-        // margin-top: 3.5rem;
         padding: 0;
         transition: font-size 10s;
         
-        @media only screen and (max-width: 500px) {
+        @include respond(phone) { // new
             display: flex;
             margin: 0;
+            padding: 0;
         }
 
-        &:hover {
-            // animation: increaseSidebar 1.3s ease-out;
-            width: 15rem;
-            // height: 100rem;
-            // display: inline;
-        }
+        // &:hover {
+        //     // animation: increaseSidebar 1.3s ease-out;
+        //     // width: 15rem;
+        //     // height: 100rem;
+        //     // display: inline;
+        // }
         
-        &:hover > &__item &__link &__link-text {
-            // animation: moveInLeft 1.3s ease-out;
-            // display: inline;
-            visibility: visible;
-            font-size: 1rem;
+        // &:hover > &__item &__link &__link-text {
+        //     // animation: moveInLeft 1.3s ease-out;
+        //     // display: inline;
+        //     // visibility: visible;
+        //     // font-size: 1rem;
     
-        }
+        // }
     }
 
 

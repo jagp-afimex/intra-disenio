@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         // type: "loop",
         width: "inherit",
-        height: "45vh",
+        height: "auto",
         pauseOnFocus: true,
         pauseOnHover: true,
         pagination: true

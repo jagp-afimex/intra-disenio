@@ -1,8 +1,12 @@
 .main-content {
     background-color: $color-white;
-    // padding: 1.5rem;
     flex: 1;
-    // overflow: scroll;
+
+    @include respond(phone) {
+        // background-color: thistle;
+        // flex-basis: 100%;
+        // flex-grow: 1;
+    }
 
 
 }

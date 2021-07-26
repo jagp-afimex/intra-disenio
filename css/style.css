@@ -7512,7 +7512,7 @@ textarea.form-control-lg {
     - tab-land
     - big-desktop
     ORDER: Base + typography > general layout + grid > page layout > components
-    1em = 10px
+    1em = 16px
 ----- */
 @keyframes moveInLeft {
   0% {
@@ -7590,10 +7590,12 @@ body {
 
 .sidebar-nav__item {
   display: block;
-  height: calc(inherit/ 10);
   transition: .2s all; }
   .sidebar-nav__item:hover {
     background-color: #005CB9; }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar-nav__item {
+      padding: 1rem; } }
 
 .sidebar-nav__link {
   text-decoration: none;
@@ -7621,6 +7623,10 @@ body {
   width: 6rem;
   height: 6rem;
   margin-top: -1.3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar-nav .icon-afimex {
+      width: 4rem;
+      height: 4rem; } }
 
 .sidebar-nav .icon-afimex + span {
   margin-top: -1rem; }
@@ -7641,7 +7647,7 @@ body {
     align-items: center; }
     .comments__button-icon {
       width: 2.5rem;
-      height: 2.5rem;
+      height: auto;
       fill: transparent;
       stroke: #ffffff;
       margin-right: .5rem; }
@@ -7753,21 +7759,18 @@ body {
 
 .flex-container {
   display: flex; }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 37.5em) {
     .flex-container {
-      flex-direction: column;
-      background-color: aqua; } }
+      flex-direction: column; } }
 
 .header {
   background-color: #FF6B00;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 8vh;
-  padding: 2rem 1.5rem; }
+  align-items: center; }
 
 .header__logo {
-  width: 9%;
+  width: 12rem;
   margin-left: 0; }
 
 .user-nav {
@@ -7827,20 +7830,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar {
+      overflow-y: scroll;
+      order: 1; } }
   .sidebar-nav {
     font-size: 1.4rem;
     list-style: none;
     padding: 0;
     transition: font-size 10s; }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 37.5em) {
       .sidebar-nav {
         display: flex;
-        margin: 0; } }
-    .sidebar-nav:hover {
-      width: 15rem; }
-    .sidebar-nav:hover > .sidebar-nav__item .sidebar-nav__link .sidebar-nav__link-text {
-      visibility: visible;
-      font-size: 1rem; }
+        margin: 0;
+        padding: 0; } }
 
 .body-login {
   overflow-y: hidden; }
