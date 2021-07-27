@@ -1,7 +1,18 @@
 .carrousel {
     max-width: 60vw;
-    transform: translateX(50%);
-    @include shadowBox
+    transform: translate(50%);
+    @include shadowBox;
+
+    @include respond(phone) {
+        position: relative;
+        max-width: 60vw;
+        // left: 0;
+        @include shadowBox;
+    
+        @include respond(phone) {
+            transform: translateX(25%);        
+        }
+    }
 }
 
 .splide__slide__container img {
@@ -37,8 +48,14 @@
 
 .splide__pagination__page {
     background-color: $secondary-color;
+    @include respond(phone) {
+        background-color: transparent;
+    }
 }
 
 .splide__pagination__page.is-active {
     background-color: $primary-color;
+    @include respond(phone) {
+        background-color: transparent;
+    }
 }

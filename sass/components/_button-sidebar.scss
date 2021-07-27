@@ -1,9 +1,7 @@
 .sidebar-nav {
     &__item {
-        // display: block;
-        // width: 100%;
-        // transition: .2s all;
-        // padding: 0;
+        padding: 0;
+        transition: background-color .2s ease-out;
         
         &:hover {
             background-color: $secondary-color;
@@ -11,12 +9,8 @@
 
         @include respond(phone) {
             width: calc(100wh / 10wh);
-            // align-self: stretch;
             margin: 0;
-
-        
             padding: .7rem;
-
         }
     }
 
@@ -32,7 +26,6 @@
         align-items: center;
 
         @include respond(phone) {
-            // display: block;
         }
         
         &-icon {
@@ -41,6 +34,7 @@
             fill: transparent;
             stroke: $color-white;
             text-align: center;
+            padding: 0;
 
             @include respond(phone) {
                 width: 2rem;
@@ -49,20 +43,28 @@
         }
 
         &-text {
-            // text-align: center;
             font-size: 1rem;
             font-weight: $medium;
             margin-top: .5rem;
-            // visibility: hidden;
 
             @include respond(phone) {
                 display: none;
-                // font-size: .5rem;
             }
         }
 
         &:hover {
             color: $color-white;
+        }
+
+        &:hover, &:active {
+            @include respond(phone) {
+                background-color: $secondary-color;
+
+                &-text {
+                    display: inline;
+                }
+
+            }
         }
     }
 
@@ -78,7 +80,8 @@
         @include respond(phone) {
             width: 4rem;
             height: 4rem;
-            margin-top: 0;
+            margin: 0;
+            padding: 0;
         }
     }
 

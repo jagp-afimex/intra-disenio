@@ -1,0 +1,38 @@
+.card {
+
+  @include respond(phone) {
+    @include shadowBox;
+  }
+
+  &:hover {
+    @include shadowBox;
+  }
+
+  &:hover  &-destacados__icon {
+    stroke: $primary-color;
+  }
+
+  &-destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+
+    transition: box-shadow .2s ease-out;
+  }
+
+  &-destacados__icon {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-white;
+    stroke: $secondary-color; 
+  }
+
+}
+
+.ups-filled {
+  stroke-width: 1;
+  width: 4rem;
+  
+}

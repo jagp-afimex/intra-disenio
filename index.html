@@ -20,10 +20,6 @@
 
 <body>
 
-
-
-
-
   <header class="header">
     <img class="header__logo" src="img/afimex-logo-header.png" alt="afimex logo">
 
@@ -155,22 +151,27 @@
     </nav>
 
 
-    <main class="main-content p-3">
+    <main class="main-content p-4">
 
       <div class="row">
-        <div class="col-12">
-          <h1 class="h1">Buenos días, Pedro Vallejo</h1>
+        <div class="col-md-12">
+          <h1 class="h1 text-secondary">
+            <i class="time">&#9925;</i> 
+            <i class="time">&#9925;</i> 
+            <i class="time">&#127765;</i> 
+            Buenos días, Pedro Vallejo
+          </h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-12">
-          <h2 class="h2">Últimos Comunicados</h2>
+        <div class="col-md-12">
+          <h2 class="h2 text-center text-secondary py-4">Últimos Comunicados</h2>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-md-6 text-center">
           <div class="carrousel">
             <div class="splide">
               <div class="splide__track">
@@ -197,8 +198,8 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6">
+      <!-- <div class="row">
+        <div class="col-md-6">
           <div class="comments">
             <button type="button" class="comments__button">
               <svg class="comments__button-icon">
@@ -208,26 +209,70 @@
             </button>
           </div>
         </div>
+      </div> -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="h3 text-center text-secondary py-5">Enlaces destacados</h3>
+        </div>
       </div>
 
       <div class="row">
-        <div class="col-12">
-          <h3 class="h3">Enlaces destacados</h3>
+        <div class="col-md-3 my-2">
+          <div class="card card-destacados">
+            <svg class="card-destacados__icon">
+              <use xlink:href="img/sprite.svg#icon-bill-light"></use>
+            </svg>
+            <span>Solicitudes de compra</span>
+            <!-- <div class="row">
+              <div class="text-center">
+              </div>
+              <div class="">
+              </div>
+            </div> -->
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3">
-          sflñ
+        <div class="col-md-3 my-2">
+          <div class="card card-destacados">
+            <svg class="card-destacados__icon">
+              <use xlink:href="img/sprite.svg#icon-ops-light"></use>
+            </svg>
+            <span>Checklist de unidades</span>
+            <!-- <div class="row">
+              <div class="col-md-6 text-center">
+              </div>
+              <div class="col-md-6">
+              </div>
+            </div> -->
+          </div>
         </div>
-        <div class="col-3">
-          alekep
+        <div class="col-md-3 my-2">
+          <div class="card card-destacados">
+            <svg class="card-destacados__icon">
+              <use xlink:href="img/sprite.svg#icon-office-light"></use>
+            </svg>
+            <span>Checklist de oficinas</span>
+            <!-- <div class="row">
+              <div class="col-md-6 text-center">
+              </div>
+              <div class="col-md-6">
+              </div>
+            </div> -->
+          </div>
         </div>
-        <div class="col-3">
-          alekep
-        </div>
-        <div class="col-3">
-          alekep
+        <div class="col-md-3 my-2">
+          <div class="card card-destacados">
+            <svg class="card-destacados__icon ups-filled">
+              <use xlink:href="img/sprite.svg#icon-ups"></use>
+            </svg>
+            <span>Servicios UPS</span>
+            <div class="row">
+              <!-- <div class="col-md-6 text-center">
+              </div>
+              <div class="col-md-6">
+              </div> -->
+            </div>
+          </div>
         </div>
       </div>
 

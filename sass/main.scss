@@ -7,8 +7,24 @@
 
 // $border-radius : 10rem;
 
+// CARDS Modificaciones
+$card-border-color: #ffffff;
+$card-border-radius: .4rem;
+
+// --------------------------------------------
+
+// COLORS Modificaciones
+$primary: #FF6B00;
+$secondary: #005CB9;
+
+// --------------------------------------------
+
+
 // este import siempre va despues de la edicion de los elmentos de bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+// .....................................................................
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -21,6 +37,7 @@
 
 @import "components/button";
 @import "components/button-sidebar";
+@import "components/card-destacados";
 @import "components/comment";
 @import "components/form";
 @import "components/carrousel";
