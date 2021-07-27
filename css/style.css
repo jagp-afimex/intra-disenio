@@ -7588,14 +7588,14 @@ body {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.1rem 0.5rem rgba(71, 71, 71, 0.7); }
 
-.sidebar-nav__item {
-  display: block;
-  transition: .2s all; }
-  .sidebar-nav__item:hover {
-    background-color: #005CB9; }
-  @media only screen and (max-width: 37.5em) {
-    .sidebar-nav__item {
-      padding: 1rem; } }
+.sidebar-nav__item:hover {
+  background-color: #005CB9; }
+
+@media only screen and (max-width: 37.5em) {
+  .sidebar-nav__item {
+    width: calc(100wh / 10wh);
+    margin: 0;
+    padding: .7rem; } }
 
 .sidebar-nav__link {
   text-decoration: none;
@@ -7612,10 +7612,17 @@ body {
     fill: transparent;
     stroke: #ffffff;
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .sidebar-nav__link-icon {
+        width: 2rem;
+        height: 2rem; } }
   .sidebar-nav__link-text {
     font-size: 1rem;
     font-weight: 500;
     margin-top: .5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .sidebar-nav__link-text {
+        display: none; } }
   .sidebar-nav__link:hover {
     color: #ffffff; }
 
@@ -7626,7 +7633,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     .sidebar-nav .icon-afimex {
       width: 4rem;
-      height: 4rem; } }
+      height: 4rem;
+      margin-top: 0; } }
 
 .sidebar-nav .icon-afimex + span {
   margin-top: -1rem; }
@@ -7700,10 +7708,16 @@ body {
 .splide__arrow-custom-prev {
   background-color: transparent;
   fill: #000000; }
+  @media only screen and (max-width: 37.5em) {
+    .splide__arrow-custom-prev {
+      fill: transparent; } }
 
 .splide__arrow-custom-next {
   background-color: transparent;
   fill: #000000; }
+  @media only screen and (max-width: 37.5em) {
+    .splide__arrow-custom-next {
+      fill: transparent; } }
 
 .splide__pagination-custom {
   background-color: transparent; }
@@ -7717,6 +7731,10 @@ body {
 .search {
   flex: 0 0 40%;
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%; } }
   .search__input {
     background-color: #FF6B00;
     font-size: 1.2rem;
@@ -7728,6 +7746,12 @@ body {
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
     transition: .2s all; }
+    @media only screen and (max-width: 37.5em) {
+      .search__input {
+        border-radius: 0;
+        padding: .7rem 1rem;
+        font-size: 1rem;
+        margin: 1rem 0 1rem 1rem; } }
     .search__input:focus {
       outline: none;
       color: black;
@@ -7746,6 +7770,12 @@ body {
     padding-left: 1.2rem;
     padding-right: 1rem;
     transition: .2s all; }
+    @media only screen and (max-width: 37.5em) {
+      .search__button {
+        border-radius: 0;
+        padding-left: 1rem;
+        padding-right: .8rem;
+        margin: 1rem 1rem 1rem 0; } }
   .search__input:focus + .search__button {
     border: solid 0.1rem #005CB9;
     background-color: #005CB9;
@@ -7768,10 +7798,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.header__logo {
-  width: 12rem;
-  margin-left: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      flex-wrap: wrap;
+      height: 11rem;
+      align-content: space-around; } }
+  .header__logo {
+    width: 12rem;
+    margin-left: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        width: 10rem; } }
 
 .user-nav {
   display: flex;
@@ -7823,6 +7860,9 @@ body {
 .main-content {
   background-color: #ffffff;
   flex: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .main-content {
+      background-color: aquamarine; } }
 
 .sidebar {
   background-color: #FF6B00;
@@ -7832,8 +7872,15 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
-      overflow-y: scroll;
-      order: 1; } }
+      order: 1;
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow: visible;
+      overflow-y: scroll; } }
   .sidebar-nav {
     font-size: 1.4rem;
     list-style: none;
@@ -7843,7 +7890,9 @@ body {
       .sidebar-nav {
         display: flex;
         margin: 0;
-        padding: 0; } }
+        padding: 0;
+        justify-content: stretch;
+        align-items: center; } }
 
 .body-login {
   overflow-y: hidden; }

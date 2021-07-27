@@ -16,11 +16,19 @@
 .splide__arrow-custom-prev {
     background-color: transparent;
     fill: $color-black;
+
+    @include respond(phone) {
+        fill: transparent;
+    }
 }
 
 .splide__arrow-custom-next {
     background-color: transparent;
     fill: $color-black;
+
+    @include respond(phone) {
+        fill: transparent;
+    }
 }
 
 .splide__pagination-custom {
