@@ -8,10 +8,6 @@
     @include shadowBox;
   }
 
-  &:hover  &-destacados__icon {
-    stroke: $primary-color;
-  }
-
   &-destacados {
     display: flex;
     flex-direction: row;
@@ -20,6 +16,10 @@
     padding: 2rem;
 
     transition: box-shadow .2s ease-out;
+
+    &:hover &__icon {
+      stroke: $primary-color;
+    }
   }
 
   &-destacados__icon {
@@ -27,12 +27,14 @@
     height: 5rem;
     fill: $color-white;
     stroke: $secondary-color; 
+
+    transition: stroke .2s ease-out;
   }
 
 }
 
 .ups-filled {
-  stroke-width: 1;
-  width: 4rem;
+  // stroke-width: 1;
+  // width: 4rem;
   
 }

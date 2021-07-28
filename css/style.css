@@ -7542,12 +7542,24 @@ textarea.form-control-lg {
 html {
   /* font-size en px que queremos / font-size default del navegador * 100 = font-size en %  */
   /* 10px / 16px * 100 = 62.5% */
+  font-size: 62.5%;
   /* 12px / 16px * 100 = 75% */
-  /* 11px / 16px * 100 = 75% */
-  font-size: 68.75%; }
+  /* 11px / 16px * 100 = 75% */ }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 74%; } }
 
 body {
   box-sizing: border-box; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      overflow-x: hidden; } }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -7644,9 +7656,6 @@ body {
 .card:hover {
   box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
 
-.card:hover .card-destacados__icon {
-  stroke: #FF6B00; }
-
 .card-destacados {
   display: flex;
   flex-direction: row;
@@ -7654,16 +7663,15 @@ body {
   align-items: center;
   padding: 2rem;
   transition: box-shadow .2s ease-out; }
+  .card-destacados:hover .card-destacados__icon {
+    stroke: #FF6B00; }
 
 .card-destacados__icon {
   width: 5rem;
   height: 5rem;
   fill: #ffffff;
-  stroke: #005CB9; }
-
-.ups-filled {
-  stroke-width: 1;
-  width: 4rem; }
+  stroke: #005CB9;
+  transition: stroke .2s ease-out; }
 
 .comments {
   background-color: khaki; }
@@ -7900,7 +7908,7 @@ body {
   flex: 1; }
   @media only screen and (max-width: 37.5em) {
     .main-content {
-      flex-grow: 1; } }
+      margin-bottom: 10rem; } }
 
 .sidebar {
   background-color: #FF6B00;
@@ -7914,7 +7922,10 @@ body {
       padding: 0;
       margin: 0;
       width: 100vw;
-      overflow-y: scroll; } }
+      position: fixed;
+      bottom: 0;
+      overflow-y: scroll;
+      z-index: 10; } }
   .sidebar-nav {
     font-size: 1.4rem;
     list-style: none;
