@@ -7,11 +7,12 @@
             background-color: $secondary-color;
         }
 
-        @include respond(phone) {
-            width: calc(100wh / 10wh);
+        @include respond(tab-port) {
+            width: calc(inherit / 10wh);
             margin: 0;
-            padding: .7rem;
+            padding: 2rem;
         }
+
     }
 
     &__link {
@@ -24,9 +25,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-
-        @include respond(phone) {
-        }
         
         &-icon {
             width: 3rem;
@@ -36,9 +34,14 @@
             text-align: center;
             padding: 0;
 
+            @include respond(tab-port) {
+                width: 4rem;
+                height: 4rem;
+            }
+
             @include respond(phone) {
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
             }
         }
 
@@ -46,6 +49,10 @@
             font-size: 1rem;
             font-weight: $medium;
             margin-top: .5rem;
+
+            @include respond(tab-port) {
+                font-size: 1.2rem;
+            }
 
             @include respond(phone) {
                 display: none;
@@ -57,14 +64,7 @@
         }
 
         &:hover, &:active {
-            @include respond(phone) {
-                background-color: $secondary-color;
-
-                &-text {
-                    display: inline;
-                }
-
-            }
+            background-color: $secondary-color;
         }
     }
 
@@ -78,8 +78,8 @@
         margin-top: -1.3rem;
 
         @include respond(phone) {
-            width: 4rem;
-            height: 4rem;
+            width: 5rem;
+            height: 5rem;
             margin: 0;
             padding: 0;
         }

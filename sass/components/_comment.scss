@@ -1,6 +1,12 @@
 .comments {
-    background-color: khaki;
-    // position: relatives;
+    background-color: $color-white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translate(50%);
+    z-index: 0;
+    @include shadowBox;
 
     &__button {
         border: none;
@@ -10,17 +16,69 @@
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         padding: .7rem;
-        display: flex;
-        justify-content: flex-end;
-        align-content: flex-end;
-        align-items: center;
+        position: absolute;
+        right: -4.5rem;
+        top: 0;
 
         &-icon {
             width: 2.5rem;
-            height: auto;
+            height: 2.5rem;
+            margin-right: .5rem;
             fill: transparent;
             stroke: $color-white;
-            margin-right: .5rem;
         }
+    }
+
+    &__container {
+        height: 25vh;
+        background-color: $color-white;
+        border-top-width: .1rem;
+        border-top-style: solid;
+        border-top-color: $primary-color;
+        overflow: auto;
+        padding: 1rem;
+    }
+
+    &__item {
+        padding: 0;
+        color: $color-black;
+
+        &-author {
+            font-size: 1rem;
+            font-weight: $medium;
+            display: block;
+            padding-bottom: .2rem;
+        }
+
+        &-content {
+            font-size: 1rem;
+        }
+
+    }
+
+    &__new {
+        width: 100%;
+        margin-top: rem;
+        padding: 1rem 0;
+        border-top-width: .1rem;
+        border-top-style: solid;
+        border-top-color: $primary-color;
+        border-bottom-width: .1rem;
+        border-bottom-style: solid;
+        border-bottom-color: $primary-color;
+
+        &-input {
+            border: none;
+            width: 85%;
+            padding: .5rem .2rem;
+            transition: .2s all ease-out;
+            border-radius: .4rem;
+
+            &:focus {
+                outline: none;
+                border: .1rem solid $secondary-color;
+            }
+        }
+
     }
 }

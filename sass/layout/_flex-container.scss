@@ -1,7 +1,8 @@
 .flex-container {
     display: flex;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         flex-direction: column;
     }
+
 }

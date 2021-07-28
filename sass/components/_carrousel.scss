@@ -1,17 +1,28 @@
-.carrousel {
-    max-width: 60vw;
-    transform: translate(50%);
-    @include shadowBox;
+#carrousel-container {
+    position: relative;
+    width: 100%;
+}
 
-    @include respond(phone) {
-        position: relative;
-        max-width: 60vw;
-        // left: 0;
-        @include shadowBox;
+.carrousel {
+    position: relative;
+    max-width: 70vw;
+    height: auto;
+    transform: translate(50%);
+    z-index: 10;
+    @include shadowBox;
     
-        @include respond(phone) {
-            transform: translateX(25%);        
-        }
+    @include respond(tab-land) {
+        // width: 65vh;
+        // height: auto;
+        // left: 16rem;
+        transform: translateX(55%);        
+    }
+
+    @include respond(phone) { 
+        width: 70vw;
+        height: auto;
+        left: -3rem;
+        transform: translateX(25%);        
     }
 }
 

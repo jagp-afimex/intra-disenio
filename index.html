@@ -80,7 +80,7 @@
             <svg class="sidebar-nav__link-icon">
               <use xlink:href="img/sprite.svg#icon-xcustomer"></use>
             </svg>
-            <span class="sidebar-nav__link-text">Atención a Clientes</span>
+            <span class="sidebar-nav__link-text">Experiencia y Servicio al Cliente</span>
           </a>
         </li>
         <li class="sidebar-nav__item">
@@ -156,9 +156,9 @@
       <div class="row">
         <div class="col-md-12">
           <h1 class="h1 text-secondary">
-            <i class="time">&#9925;</i> 
+            <!-- <i class="time">&#9925;</i> 
             <i class="time">☀️</i> 
-            <i class="time">&#127765;</i> 
+            <i class="time">&#127765;</i>  -->
             Buenos días, Pedro Vallejo
           </h1>
         </div>
@@ -171,43 +171,78 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6 text-center">
-          <div class="carrousel">
-            <div class="splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <div class="splide__slide__container">
-                      <img src="img/afimex-logo-header.png" alt="">
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="splide__slide__container">
-                      <img src="img/comunicado.png" alt="">
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="splide__slide__container">
-                      <img src="img/afimex-logo.png" alt="">
-                    </div>
-                  </li>
-                </ul>
+        <div class="col-md-6">
+          <div id="carrousel-container">
+            <div id="carrousel" class="carrousel">
+              <div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="img/afimex-logo-header.png" alt="">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="img/comunicado.png" alt="">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="img/afimex-logo.png" alt="">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="comments" class="comments px-3 py-2">
+              <button id="showComments" type="button" data-clicked="false" class="comments__button">
+                <svg class="comments__button-icon">
+                  <use xlink:href="img/sprite.svg#icon-comments"></use>
+                </svg>
+              </button>
+              <div class="row">
+                <div class="col-md-12 py-2">
+                  <h4 class="h4 text-secondary">Comentarios - Día de Muertos</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 comments__container">
+                  <div class="comments__item">
+                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                    <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                  </div>
+                  <div class="comments__item">
+                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                    <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                  </div>
+                  <div class="comments__item">
+                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                    <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                  </div>
+                  <div class="comments__item">
+                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                    <p class="comments__item-content">sssssswwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwssssssssssssssssssssssssssssssssssssssss sssssssdddddddddddddddddddddddddddddddHola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="comments__new" action="#">
+                    <span class="comments__item-author">Pedro Vallejo</span>
+                    <input class="comments__new-input" type="text" placeholder="Escribe algo...">
+                    <button class="btn-comments">Comentar</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      
       <!-- <div class="row">
         <div class="col-md-6">
-          <div class="comments">
-            <button type="button" class="comments__button">
-              <svg class="comments__button-icon">
-                <use xlink:href="img/sprite.svg#icon-comments"></use>
-              </svg>
-              Comentarios
-            </button>
-          </div>
         </div>
       </div> -->
 
@@ -218,61 +253,47 @@
       </div>
 
       <div class="row">
-        <div class="col-md-3 my-2">
-          <div class="card card-destacados">
-            <svg class="card-destacados__icon">
-              <use xlink:href="img/sprite.svg#icon-bill-light"></use>
-            </svg>
-            <span>Solicitudes de compra</span>
-            <!-- <div class="row">
-              <div class="text-center">
-              </div>
-              <div class="">
-              </div>
-            </div> -->
-          </div>
-        </div>
-        <div class="col-md-3 my-2">
-          <div class="card card-destacados">
-            <svg class="card-destacados__icon">
-              <use xlink:href="img/sprite.svg#icon-ops-light"></use>
-            </svg>
-            <span>Checklist de unidades</span>
-            <!-- <div class="row">
-              <div class="col-md-6 text-center">
-              </div>
-              <div class="col-md-6">
-              </div>
-            </div> -->
-          </div>
-        </div>
-        <div class="col-md-3 my-2">
-          <div class="card card-destacados">
-            <svg class="card-destacados__icon">
-              <use xlink:href="img/sprite.svg#icon-office-light"></use>
-            </svg>
-            <span>Checklist de oficinas</span>
-            <!-- <div class="row">
-              <div class="col-md-6 text-center">
-              </div>
-              <div class="col-md-6">
-              </div>
-            </div> -->
-          </div>
-        </div>
-        <div class="col-md-3 my-2">
-          <div class="card card-destacados">
-            <svg class="card-destacados__icon ups-filled">
-              <use xlink:href="img/sprite.svg#icon-ups"></use>
-            </svg>
-            <span>Servicios UPS</span>
-            <div class="row">
-              <!-- <div class="col-md-6 text-center">
-              </div>
-              <div class="col-md-6">
-              </div> -->
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-destacados">
+              <svg class="card-destacados__icon">
+                <use xlink:href="img/sprite.svg#icon-bill-light"></use>
+              </svg>
+              <span>Solicitudes de compra</span>
             </div>
-          </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-destacados">
+              <svg class="card-destacados__icon">
+                <use xlink:href="img/sprite.svg#icon-ops-light"></use>
+              </svg>
+              <span>Checklist de unidades</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-destacados">
+              <svg class="card-destacados__icon">
+                <use xlink:href="img/sprite.svg#icon-office-light"></use>
+              </svg>
+              <span>Checklist de oficinas</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-destacados">
+              <svg class="card-destacados__icon ups-filled">
+                <use xlink:href="img/sprite.svg#icon-ups"></use>
+              </svg>
+              <span>Servicios UPS</span>
+              <div class="row">
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 

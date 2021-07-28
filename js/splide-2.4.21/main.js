@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
         rewind: true,
         perPage: 1,
         start: 0,
-        autoplay: true,
+        // autoplay: true,
         classes: {
             arrow : 'splide__arrow splide__arrow-custom',
             prev  : 'splide__arrow--prev splide__arrow-custom-prev',
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // type: "loop",
         width: "inherit",
         height: "auto",
-        pauseOnFocus: true,
-        pauseOnHover: true,
+        // pauseOnFocus: true,
+        // pauseOnHover: true,
         pagination: true
 
     }).mount();

@@ -14,6 +14,50 @@
   }
 }
 
+@keyframes moveCarrousel {
+  from {
+    transform: translate(50%);
+    transform: scale(100%);
+  }
+
+  to {
+    transform: translate(0%);
+    transform: scale(75%);
+  }
+}
+
+@keyframes moveCarrouselBack {
+  from {
+    transform: translate(0%);
+    transform: scale(75%);
+  }
+  
+  to {
+    transform: translate(50%);
+    transform: scale(100%);
+  }
+}
+
+// @keyframes showComments {
+//   from {
+//     transform: translate(50%);
+//   }
+
+//   to {
+//     transform: translate(95%);
+//   }
+// }
+
+// @keyframes showCommentsBack {
+//   from {
+//     transform: translate(95%);
+//   }
+  
+//   to {
+//     transform: translate(50%);
+//   }
+// }
+
 @keyframes increaseSidebar {
   0% {
     width: inherit;
