@@ -1,9 +1,5 @@
 .card {
 
-  // @include respond(tab-port) {
-  //   @include shadowBox;
-  // }
-
   &:hover, &:active {
     @include shadowBox;
   }

@@ -7514,15 +7514,11 @@ textarea.form-control-lg {
     ORDER: Base + typography > general layout + grid > page layout > components
     1em = 16px
 ----- */
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-1.2rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+@keyframes containerCarrousel {
+  from {
+    transform: translate(0%); }
+  to {
+    transform: translate(0%); } }
 
 @keyframes moveCarrousel {
   from {
@@ -7532,21 +7528,31 @@ textarea.form-control-lg {
     transform: translate(0%);
     transform: scale(75%); } }
 
+@keyframes showComments {
+  from {
+    transform: translate(50%); }
+  to {
+    transform: translate(90%); } }
+
+@keyframes containerCarrouselBack {
+  from {
+    transform: translate(0%); }
+  to {
+    transform: translate(50%); } }
+
 @keyframes moveCarrouselBack {
   from {
     transform: translate(0%);
     transform: scale(75%); }
   to {
-    transform: translate(50%);
+    transform: translate(150%);
     transform: scale(100%); } }
 
-@keyframes increaseSidebar {
-  0% {
-    width: inherit; }
-  80% {
-    width: auto; }
-  100% {
-    width: auto; } }
+@keyframes showCommentsBack {
+  from {
+    transform: translate(90%); }
+  to {
+    transform: translate(0%); } }
 
 *,
 *::after,
@@ -7799,7 +7805,8 @@ body {
 
 #carrousel-container {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  transform: translate(0%); }
 
 .carrousel {
   position: relative;

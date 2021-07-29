@@ -7,37 +7,41 @@ const carrouselContainerElement = document.getElementById("carrousel-container")
 showCommentsButton.addEventListener("click", () => {
   if (showCommentsButton.dataset.clicked === "true")
   {
-    carrouselContainerElement.style.transform = "translate(50%)";
-
-    carrouselElement.style.transform = "translateX(150%)";
-    carrouselElement.style.transform = "scale(100%)";
+    carrouselContainerElement.style.animation = "containerCarrouselBack .4s forwards";
     
-    commentsElement.style.transform = "translate(0%)";
-
-    // carrouselElement.style.animation = "moveCarrouselBack .4s forwards";
-
-    // commentsElement.style.animation = "showCommentsBack .4s forwards";
+    carrouselElement.style.animation = "moveCarrouselBack .4s forwards";
+    commentsElement.style.animation = "showCommentsBack .4s forwards";
     
     showCommentsButton.style.backgroundColor = "#005CB9";
     
     showCommentsButton.dataset.clicked = "false";
+    
+    // carrouselContainerElement.style.transform = "translate(50%)";
+    // carrouselElement.style.transform = "translate(150%)";
+    // carrouselElement.style.transform = "scale(100%)";
+    
+    // commentsElement.style.transform = "translate(0%)";
+    // showCommentsButton.dataset.clicked = "false";
+    // showCommentsButton.style.backgroundColor = "#005CB9";
   }
   else if (showCommentsButton.dataset.clicked === "false")
   {
-    carrouselContainerElement.style.transform = "translate(0%)";
+    carrouselContainerElement.style.animation = "containerCarrousel .4s forwards";  
 
-    // carrouselElement.style.animation = "moveCarrousel .4s forwards";
-
-    // commentsElement.style.animation = "showComments .4s forwards";
-    
-    carrouselElement.style.transform = "translate(0%)";
-    carrouselElement.style.transform = "scale(75%)";
-
-    commentsElement.style.transform = "translate(95%)";
+    carrouselElement.style.animation = "moveCarrousel .4s forwards";
+    commentsElement.style.animation = "showComments .4s forwards";
     
     showCommentsButton.style.backgroundColor = "#FF6B00";
-
+    
     showCommentsButton.dataset.clicked = "true";
+    
+    // carrouselContainerElement.style.transform = "translate(0%)";
+    // carrouselElement.style.transform = "translate(0%)";
+    // carrouselElement.style.transform = "scale(75%)";
+
+    // commentsElement.style.transform = "translate(95%)";
+    // showCommentsButton.dataset.clicked = "true";
+    // showCommentsButton.style.backgroundColor = "#FF6B00";
   }
 });
 
