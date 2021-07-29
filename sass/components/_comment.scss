@@ -1,18 +1,33 @@
+#comments-body {
+    visibility: hidden;
+}
 .comments {
+    // lo que tenia
+    // background-color: $color-white;
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // top: 0;
+    // transform: translate(50%);
+    // z-index: 0;
+    // @include shadowBox;
+
+    // experimentacion
     background-color: $color-white;
-    width: 100%;
-    height: 100%;
+    @include shadowBox;
     position: absolute;
     top: 0;
-    transform: translate(50%);
-    z-index: 0;
-    @include shadowBox;
+    left: 0;
+    z-index: -10;
+    // z-index: 0;
+
+    @include respond(phone) { 
+        width: 100%;
+    }
 
     &__button {
         border: none;
         background-color: $secondary-color;
-        color: $color-white;
-        font-weight: $thin;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         padding: .7rem;
@@ -20,12 +35,21 @@
         right: -4.5rem;
         top: 0;
 
+        @include respond(tab-port) {
+            right: -3.7rem;
+        }
+
         &-icon {
             width: 2.5rem;
             height: 2.5rem;
             margin-right: .5rem;
             fill: transparent;
             stroke: $color-white;
+        
+            @include respond(tab-port) {
+                width: 1.7rem;
+                height: 1.7rem;
+            }
         }
     }
 
@@ -37,6 +61,27 @@
         border-top-color: $primary-color;
         overflow: auto;
         padding: 1rem;
+
+        @include respond(big-desktop) {
+            height: 100%;
+        }
+
+        @include respond(tab-land) {
+            height: 10vh;
+        }
+
+        @include respond(tab-port) {
+            height: 8vh;
+        }
+
+        @include respond(comments) {
+            height: 13vh;
+        }
+
+        @include respond(phone) {
+            height: 9vh;
+        }
+
     }
 
     &__item {
@@ -58,7 +103,7 @@
 
     &__new {
         width: 100%;
-        margin-top: rem;
+        margin-top: 1rem;
         padding: 1rem 0;
         border-top-width: .1rem;
         border-top-style: solid;
@@ -66,13 +111,22 @@
         border-bottom-width: .1rem;
         border-bottom-style: solid;
         border-bottom-color: $primary-color;
-
+        
         &-input {
             border: none;
             width: 85%;
             padding: .5rem .2rem;
             transition: .2s all ease-out;
             border-radius: .4rem;
+
+            @include respond(tab-land) {
+                width: 80%;
+            }
+            
+            @include respond(tab-port) {
+                width: 75%;
+                border-radius: .2rem;
+            }
 
             &:focus {
                 outline: none;

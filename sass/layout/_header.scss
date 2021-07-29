@@ -7,7 +7,7 @@
     align-items: center;
     
     @include respond(big-desktop) {
-        height: 5vh;
+        height: 8vh;
     }
 
     @include respond(tab-land) {

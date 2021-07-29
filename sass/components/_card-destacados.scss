@@ -4,7 +4,7 @@
     @include shadowBox;
   }
 
-  &-destacados {
+  &-shadowed {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -18,9 +18,9 @@
     }
   }
 
-  &-destacados__icon {
-    width: 5rem;
-    height: 5rem;
+  &-shadowed__icon {
+    width: 4.5rem;
+    height: 4.5rem;
     fill: $color-white;
     stroke: $secondary-color; 
 
@@ -29,8 +29,7 @@
 
 }
 
-// .ups-filled {
-//   // stroke-width: 1;
-//   // width: 4rem;
-  
-// }
+.ups-filled {
+  width: 3.7rem;
+  height: 3.7rem;  
+}

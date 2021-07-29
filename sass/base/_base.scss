@@ -31,11 +31,15 @@ html {
         font-size: 74%; // 1rem = 12px, 12/16 * 100 = 50%
     }
 
+    
 }
 
 body {
     box-sizing: border-box;
     font-size: 1.1rem;
+    animation: showContent .3s linear forwards;
+    opacity: 0;
+    animation-delay: .2s;
     @include respond(phone) {
         overflow-x: hidden;
     }

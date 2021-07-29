@@ -7514,45 +7514,100 @@ textarea.form-control-lg {
     ORDER: Base + typography > general layout + grid > page layout > components
     1em = 16px
 ----- */
+@keyframes showContent {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: .8; }
+  100% {
+    opacity: 1; } }
+
 @keyframes containerCarrousel {
-  from {
-    transform: translate(0%); }
-  to {
-    transform: translate(0%); } }
-
-@keyframes moveCarrousel {
-  from {
-    transform: translate(50%);
-    transform: scale(100%); }
-  to {
-    transform: translate(0%);
-    transform: scale(75%); } }
-
-@keyframes showComments {
   from {
     transform: translate(50%); }
   to {
-    transform: translate(90%); } }
+    box-shadow: none;
+    transform: translate(0%); } }
 
-@keyframes containerCarrouselBack {
+@keyframes containerCarrouselMovil {
+  from {
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
+  to {
+    box-shadow: none; } }
+
+@keyframes moveCarrousel {
+  from {
+    transform: scale(100%); }
+  to {
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
+    transform: scale(75%); } }
+
+@keyframes moveCarrouselMovil {
+  from {
+    transform: scale(100%); }
+  to {
+    transform: scale(85%); } }
+
+@keyframes showComments {
   from {
     transform: translate(0%); }
   to {
+    transform: translate(90%); } }
+
+@keyframes showCommentsMovil {
+  from {
+    transform: translateY(0%);
+    z-index: -10; }
+  to {
+    transform: translateY(75%);
+    padding-bottom: 10rem;
+    z-index: 0; } }
+
+@keyframes containerCarrouselBack {
+  from {
+    box-shadow: transparent;
+    transform: translate(0%); }
+  to {
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
     transform: translate(50%); } }
+
+@keyframes containerCarrouselBackMovil {
+  from {
+    box-shadow: none; }
+  to {
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); } }
 
 @keyframes moveCarrouselBack {
   from {
     transform: translate(0%);
     transform: scale(75%); }
   to {
-    transform: translate(150%);
+    transform: translate(50%);
+    transform: scale(100%); } }
+
+@keyframes moveCarrouselBackMovil {
+  from {
+    transform: scale(85%); }
+  to {
     transform: scale(100%); } }
 
 @keyframes showCommentsBack {
   from {
-    transform: translate(90%); }
+    transform: translate(90%);
+    z-index: 0; }
   to {
-    transform: translate(0%); } }
+    transform: translate(0%);
+    z-index: -10; } }
+
+@keyframes showCommentsBackMovil {
+  from {
+    transform: translateY(75%);
+    padding-bottom: 10rem;
+    z-index: 0; }
+  to {
+    transform: translateY(0%);
+    box-shadow: none;
+    z-index: -10; } }
 
 *,
 *::after,
@@ -7579,7 +7634,10 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  animation: showContent .3s linear forwards;
+  opacity: 0;
+  animation-delay: .2s; }
   @media only screen and (max-width: 37.5em) {
     body {
       overflow-x: hidden; } }
@@ -7621,6 +7679,10 @@ body {
   border: none;
   padding: .5rem .8rem;
   border-radius: .4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .btn-comments {
+      font-size: 1rem;
+      border-radius: .2rem; } }
 
 .sidebar-nav__item {
   padding: 0;
@@ -7689,49 +7751,62 @@ body {
 .card:hover, .card:active {
   box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
 
-.card-destacados {
+.card-shadowed {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
   transition: box-shadow .2s ease-out; }
-  .card-destacados:hover .card-destacados__icon {
+  .card-shadowed:hover .card-shadowed__icon {
     stroke: #FF6B00; }
 
-.card-destacados__icon {
-  width: 5rem;
-  height: 5rem;
+.card-shadowed__icon {
+  width: 4.5rem;
+  height: 4.5rem;
   fill: #ffffff;
   stroke: #005CB9;
   transition: stroke .2s ease-out; }
 
+.ups-filled {
+  width: 3.7rem;
+  height: 3.7rem; }
+
+#comments-body {
+  visibility: hidden; }
+
 .comments {
   background-color: #ffffff;
-  width: 100%;
-  height: 100%;
+  box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
   position: absolute;
   top: 0;
-  transform: translate(50%);
-  z-index: 0;
-  box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
+  left: 0;
+  z-index: -10; }
+  @media only screen and (max-width: 37.5em) {
+    .comments {
+      width: 100%; } }
   .comments__button {
     border: none;
     background-color: #005CB9;
-    color: #ffffff;
-    font-weight: 100;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: .7rem;
     position: absolute;
     right: -4.5rem;
     top: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .comments__button {
+        right: -3.7rem; } }
     .comments__button-icon {
       width: 2.5rem;
       height: 2.5rem;
       margin-right: .5rem;
       fill: transparent;
       stroke: #ffffff; }
+      @media only screen and (max-width: 56.25em) {
+        .comments__button-icon {
+          width: 1.7rem;
+          height: 1.7rem; } }
   .comments__container {
     height: 25vh;
     background-color: #ffffff;
@@ -7740,6 +7815,21 @@ body {
     border-top-color: #FF6B00;
     overflow: auto;
     padding: 1rem; }
+    @media only screen and (min-width: 112.5em) {
+      .comments__container {
+        height: 100%; } }
+    @media only screen and (max-width: 75em) {
+      .comments__container {
+        height: 10vh; } }
+    @media only screen and (max-width: 56.25em) {
+      .comments__container {
+        height: 8vh; } }
+    @media only screen and (max-width: 767px) {
+      .comments__container {
+        height: 13vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .comments__container {
+        height: 9vh; } }
   .comments__item {
     padding: 0;
     color: #000000; }
@@ -7752,7 +7842,7 @@ body {
       font-size: 1rem; }
   .comments__new {
     width: 100%;
-    margin-top: rem;
+    margin-top: 1rem;
     padding: 1rem 0;
     border-top-width: .1rem;
     border-top-style: solid;
@@ -7766,6 +7856,13 @@ body {
       padding: .5rem .2rem;
       transition: .2s all ease-out;
       border-radius: .4rem; }
+      @media only screen and (max-width: 75em) {
+        .comments__new-input {
+          width: 80%; } }
+      @media only screen and (max-width: 56.25em) {
+        .comments__new-input {
+          width: 75%;
+          border-radius: .2rem; } }
       .comments__new-input:focus {
         outline: none;
         border: 0.1rem solid #005CB9; }
@@ -7803,27 +7900,26 @@ body {
     outline: none;
     border: 0.1rem solid #FF6B00; }
 
-#carrousel-container {
-  position: relative;
-  width: 100%;
-  transform: translate(0%); }
-
 .carrousel {
   position: relative;
-  max-width: 70vw;
-  height: auto;
+  max-width: 75vw;
   transform: translate(50%);
-  z-index: 10;
-  box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
+  z-index: 10; }
   @media only screen and (max-width: 75em) {
     .carrousel {
+      width: 100%;
       transform: translateX(55%); } }
+  @media only screen and (max-width: 56.25em) {
+    .carrousel {
+      width: 100%;
+      height: auto; } }
+  @media only screen and (max-width: 767px) {
+    .carrousel {
+      transform: translate(13%); } }
   @media only screen and (max-width: 37.5em) {
     .carrousel {
-      width: 70vw;
-      height: auto;
-      left: -3rem;
-      transform: translateX(25%); } }
+      transform: translate(13%);
+      padding-bottom: 3rem; } }
 
 .splide__slide__container img {
   width: 100%;
@@ -7931,7 +8027,7 @@ body {
   align-items: center; }
   @media only screen and (min-width: 112.5em) {
     .header {
-      height: 5vh; } }
+      height: 8vh; } }
   @media only screen and (max-width: 75em) {
     .header {
       height: 7vh; } }
@@ -8008,15 +8104,18 @@ body {
 
 .sidebar {
   background-color: #FF6B00;
-  flex: 0 0 9%;
   display: flex;
+  flex: 0 0 9%;
   flex-direction: column;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   overflow-y: auto;
-  height: 91vh; }
+  height: 100vh; }
   @media only screen and (min-width: 112.5em) {
     .sidebar {
-      height: 95vh; } }
+      position: sticky;
+      top: 0; } }
   @media only screen and (max-width: 75em) {
     .sidebar {
       height: 100vh; } }
@@ -8027,7 +8126,6 @@ body {
       height: auto;
       padding: 0;
       margin: 0;
-      position: fixed;
       bottom: 0;
       left: 0;
       overflow-y: scroll;

@@ -7,10 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intranet Afimex - Inicio</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/splide-2.4.21/splide.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -172,6 +179,77 @@
 
       <div class="row">
         <div class="col-md-6">
+          <div id="carrousel" class="carrousel">
+            <div id="splide-carrousel" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img src="img/afimex-logo-header.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img src="img/comunicado.png" alt="">
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img src="img/afimex-logo.png" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="comments" class="comments px-3 py-2">
+              <button id="showComments" type="button" data-clicked="false" class="comments__button">
+                <svg class="comments__button-icon">
+                  <use xlink:href="img/sprite.svg#icon-comments"></use>
+                </svg>
+              </button>
+              <div class="row">
+                <div class="col-md-12 py-2">
+                  <h4 class="h4 text-secondary">Comentarios - Día de Muertos</h4>
+                </div>
+              </div>
+              <div id="comments-body">
+                <div class="row">
+                  <div class="col-md-12 comments__container">
+                    <div class="comments__item">
+                      <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                      <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                    </div>
+                    <div class="comments__item">
+                      <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                      <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                    </div>
+                    <div class="comments__item">
+                      <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                      <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                    </div>
+                    <div class="comments__item">
+                      <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
+                      <p class="comments__item-content">sssssswwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwssssssssssssssssssssssssssssssssssssssss sssssssdddddddddddddddddddddddddddddddHola, comentario día de Muertos nuemro unos de los comentarios.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <form class="comments__new" action="#">
+                      <span class="comments__item-author">Pedro Vallejo</span>
+                      <input class="comments__new-input" type="text" placeholder="Escribe algo...">
+                      <button class="btn-comments">Comentar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-md-6">
           <div id="carrousel-container">
             <div id="carrousel" class="carrousel">
               <div class="splide">
@@ -239,13 +317,8 @@
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- <div class="row">
-        <div class="col-md-6">
-        </div>
       </div> -->
-
+      
       <div class="row">
         <div class="col-md-12">
           <h3 class="h3 text-center text-secondary pb-4 pt-5">Enlaces destacados</h3>
@@ -255,8 +328,8 @@
       <div class="row">
         <div class="col-sm-6 col-md-3 my-2">
           <a style="text-decoration: none; color: black;" href="#">
-            <div class="card card-destacados">
-              <svg class="card-destacados__icon">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
                 <use xlink:href="img/sprite.svg#icon-bill-light"></use>
               </svg>
               <span>Solicitudes de compra</span>
@@ -265,8 +338,8 @@
         </div>
         <div class="col-sm-6 col-md-3 my-2">
           <a style="text-decoration: none; color: black;" href="#">
-            <div class="card card-destacados">
-              <svg class="card-destacados__icon">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
                 <use xlink:href="img/sprite.svg#icon-ops-light"></use>
               </svg>
               <span>Checklist de unidades</span>
@@ -275,8 +348,8 @@
         </div>
         <div class="col-sm-6 col-md-3 my-2">
           <a style="text-decoration: none; color: black;" href="#">
-            <div class="card card-destacados">
-              <svg class="card-destacados__icon">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
                 <use xlink:href="img/sprite.svg#icon-office-light"></use>
               </svg>
               <span>Checklist de oficinas</span>
@@ -285,8 +358,143 @@
         </div>
         <div class="col-sm-6 col-md-3 my-2">
           <a style="text-decoration: none; color: black;" href="#">
-            <div class="card card-destacados">
-              <svg class="card-destacados__icon ups-filled">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon ups-filled">
+                <use xlink:href="img/sprite.svg#icon-ups"></use>
+              </svg>
+              <span>Servicios UPS</span>
+              <div class="row">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-bill-light"></use>
+              </svg>
+              <span>Solicitudes de compra</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-ops-light"></use>
+              </svg>
+              <span>Checklist de unidades</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-office-light"></use>
+              </svg>
+              <span>Checklist de oficinas</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon ups-filled">
+                <use xlink:href="img/sprite.svg#icon-ups"></use>
+              </svg>
+              <span>Servicios UPS</span>
+              <div class="row">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-bill-light"></use>
+              </svg>
+              <span>Solicitudes de compra</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-ops-light"></use>
+              </svg>
+              <span>Checklist de unidades</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-office-light"></use>
+              </svg>
+              <span>Checklist de oficinas</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon ups-filled">
+                <use xlink:href="img/sprite.svg#icon-ups"></use>
+              </svg>
+              <span>Servicios UPS</span>
+              <div class="row">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-bill-light"></use>
+              </svg>
+              <span>Solicitudes de compra</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-ops-light"></use>
+              </svg>
+              <span>Checklist de unidades</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon">
+                <use xlink:href="img/sprite.svg#icon-office-light"></use>
+              </svg>
+              <span>Checklist de oficinas</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-3 my-2">
+          <a style="text-decoration: none; color: black;" href="#">
+            <div class="card card-shadowed">
+              <svg class="card-shadowed__icon ups-filled">
                 <use xlink:href="img/sprite.svg#icon-ups"></use>
               </svg>
               <span>Servicios UPS</span>

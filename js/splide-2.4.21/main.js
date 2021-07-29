@@ -11,12 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
             pagination: 'splide__pagination splide__pagination-custom', 
             page  : 'splide__pagination__page splide__pagination__page-custom', 
         },
+        // fixedWidth: "75vw",
+        // fixedHeight: "15rem",
+        // width: "100%",
+        // height: "auto",
         // type: "loop",
-        width: "inherit",
-        height: "auto",
         // pauseOnFocus: true,
         // pauseOnHover: true,
         pagination: true
-
     }).mount();
 });

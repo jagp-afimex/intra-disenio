@@ -1,56 +1,90 @@
-// @keyframes moveInLeft {
-//   0% {
-//       opacity: 0;
-//       transform: translateX(-1.2rem);
-//   }
-
-//   80% {
-//       transform: translateX(1rem);
-//   }
-
-//   100% {
-//       opacity: 1;
-//       transform: translate(0);
-//   }
-// }
-
+@keyframes showContent {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes containerCarrousel {
   from {
-    transform: translate(0%);
+    transform: translate(50%);
   }
   to {
+    box-shadow: none;
     transform: translate(0%);
+  }
+}
+
+@keyframes containerCarrouselMovil {
+  from {
+    @include shadowBox;
+  }
+  to {
+    box-shadow: none;
   }
 }
 
 @keyframes moveCarrousel {
   from {
-    transform: translate(50%);
     transform: scale(100%);
   }
-
   to {
-    transform: translate(0%);
+    @include shadowBox;
     transform: scale(75%);
+  }
+}
+
+@keyframes moveCarrouselMovil {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(85%);
   }
 }
 
 @keyframes showComments {
   from {
-    transform: translate(50%);
+    transform: translate(0%);
   }
-
   to {
     transform: translate(90%);
   }
 }
 
-@keyframes containerCarrouselBack {
+@keyframes showCommentsMovil {
   from {
-    transform: translate(0%);
+    transform: translateY(0%);
+    z-index: -10;
   }
   to {
+    transform: translateY(75%);
+    padding-bottom: 10rem;
+    z-index: 0;
+  }
+}
+
+@keyframes containerCarrouselBack {
+  from {
+    box-shadow: transparent;
+    transform: translate(0%)
+  }
+  to {
+    @include shadowBox;
     transform: translate(50%);
+  }
+}
+
+@keyframes containerCarrouselBackMovil {
+  from {
+    box-shadow: none;
+  }
+  to {
+    @include shadowBox;
   }
 }
 
@@ -61,37 +95,41 @@
   }
   
   to {
-    transform: translate(150%);
+    transform: translate(50%);
     transform: scale(100%);
   }
 }
 
-@keyframes showCommentsBack {
+@keyframes moveCarrouselBackMovil {
   from {
-    transform: translate(90%);
+    transform: scale(85%);
   }
-  
   to {
-    transform: translate(0%);
+    transform: scale(100%);
   }
 }
 
 
+@keyframes showCommentsBack {
+  from {
+    transform: translate(90%);
+    z-index: 0;
+  }
+  to {
+    transform: translate(0%);
+    z-index: -10;
+  }
+}
 
-
-
-// @keyframes increaseSidebar {
-//   0% {
-//     width: inherit;
-//   }
-
-//   80% {
-//     width: auto;
-
-//   }
-
-//   100% {
-//     width: auto;
-
-//   }
-// }
+@keyframes showCommentsBackMovil {
+  from {
+    transform: translateY(75%);
+    padding-bottom: 10rem;
+    z-index: 0;
+  }
+  to {
+    transform: translateY(0%);
+    box-shadow: none;
+    z-index: -10;
+  }
+}
