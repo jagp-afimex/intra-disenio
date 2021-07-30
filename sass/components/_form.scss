@@ -2,6 +2,10 @@
 
     &__group {
         margin: 2.5rem 3rem;
+
+        @include respond(tab-port) {
+            margin: 2rem 3.5rem;
+        }
     }
 
     &__box-icon {
@@ -34,6 +38,10 @@
         width: 100%;
 
         transition: all .2s;
+
+        @include respond(tab-port) {
+            font-size: 1.2rem;
+        }
 
         &:focus {
             outline: none;

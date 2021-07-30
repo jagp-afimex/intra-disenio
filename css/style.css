@@ -7869,6 +7869,9 @@ body {
 
 .form__group {
   margin: 2.5rem 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .form__group {
+      margin: 2rem 3.5rem; } }
 
 .form__box-icon {
   display: inline-block;
@@ -7896,6 +7899,9 @@ body {
   padding: .8rem 1rem;
   width: 100%;
   transition: all .2s; }
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      font-size: 1.2rem; } }
   .form__input:focus {
     outline: none;
     border: 0.1rem solid #FF6B00; }
@@ -8146,7 +8152,10 @@ body {
         justify-content: stretch; } }
 
 .body-login {
-  overflow-y: hidden; }
+  overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .body-login {
+      overflow-x: hidden; } }
 
 .rect {
   position: absolute;
@@ -8159,48 +8168,108 @@ body {
   background-color: #FF6B00;
   top: 15rem;
   right: 100rem; }
+  @media only screen and (min-width: 112.5em) {
+    .rectangulo-naranja {
+      top: 20rem;
+      right: 110rem; } }
+  @media only screen and (max-width: 75em) {
+    .rectangulo-naranja {
+      right: 90rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-naranja {
+      top: 25rem;
+      right: 90rem; } }
 
 .rectangulo-naranja-invertido {
   transform: rotate(315deg);
   background-color: #FF6B00;
   top: 79.4rem;
   right: 100rem; }
+  @media only screen and (min-width: 112.5em) {
+    .rectangulo-naranja-invertido {
+      top: 84.4rem;
+      right: 110rem; } }
+  @media only screen and (max-width: 75em) {
+    .rectangulo-naranja-invertido {
+      right: 90rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-naranja-invertido {
+      top: 89.4rem;
+      right: 90rem; } }
 
 .rectangulo-azul {
   transform: rotate(45deg);
   background-color: #005CB9;
   top: 15rem;
   right: 80rem; }
+  @media only screen and (min-width: 112.5em) {
+    .rectangulo-azul {
+      top: 20rem;
+      right: 90rem; } }
+  @media only screen and (max-width: 75em) {
+    .rectangulo-azul {
+      right: 70rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-azul {
+      top: 25rem;
+      right: 65rem; } }
 
 .rectangulo-azul-invertido {
   transform: rotate(315deg);
   top: 79.4rem;
   background-color: #005CB9;
   right: 80rem; }
+  @media only screen and (min-width: 112.5em) {
+    .rectangulo-azul-invertido {
+      top: 84.4rem;
+      right: 90rem; } }
+  @media only screen and (max-width: 75em) {
+    .rectangulo-azul-invertido {
+      right: 70rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-azul-invertido {
+      top: 89.4rem;
+      right: 65rem; } }
 
 .rectangulo-naranja-sec {
   transform: rotate(45deg);
   background-color: #FF6B00;
   top: 15rem;
   right: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-naranja-sec {
+      top: 25rem;
+      right: 5rem; } }
 
 .rectangulo-naranja-invertido-sec {
   transform: rotate(315deg);
-  top: 79.4rem;
   background-color: #FF6B00;
+  top: 79.4rem;
   right: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-naranja-invertido-sec {
+      top: 89.4rem;
+      right: 5rem; } }
 
 .rectangulo-azul-sec {
   transform: rotate(45deg);
   background-color: #005CB9;
   top: 15rem;
   right: -10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-azul-sec {
+      top: 25rem;
+      right: -20rem; } }
 
 .rectangulo-azul-invertido-sec {
   transform: rotate(315deg);
-  top: 79.4rem;
   background-color: #005CB9;
+  top: 79.4rem;
   right: -10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .rectangulo-azul-invertido-sec {
+      top: 89.4rem;
+      right: -20rem; } }
 
 .login {
   position: absolute;
@@ -8213,6 +8282,9 @@ body {
   left: 50%;
   z-index: 10;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 56.25em) {
+    .login {
+      height: 55rem; } }
   .login__logo-box {
     display: block;
     text-align: center;

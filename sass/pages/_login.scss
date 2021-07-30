@@ -1,5 +1,10 @@
 .body-login {
-    overflow-y: hidden;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+        overflow-x: hidden;
+    }
+
 }
 
 .rect {
@@ -14,6 +19,20 @@
     background-color: $primary-color;
     top: 15rem;
     right: 100rem;
+
+    @include respond(big-desktop) {
+        top: 20rem;
+        right: 110rem;
+    }
+
+    @include respond(tab-land) {
+        right: 90rem;
+    }
+
+    @include respond(tab-port) {
+        top: 25rem;
+        right: 90rem;
+    }
 }
 
 .rectangulo-naranja-invertido {
@@ -21,6 +40,20 @@
     background-color: $primary-color;
     top: 79.4rem;
     right: 100rem;
+
+    @include respond(big-desktop) {
+        top: 84.4rem;
+        right: 110rem;
+    }
+
+    @include respond(tab-land) {
+        right: 90rem;
+    }
+
+    @include respond(tab-port) {
+        top: 89.4rem;
+        right: 90rem;
+    }
 }
 
 .rectangulo-azul {
@@ -28,6 +61,20 @@
     background-color: $secondary-color;
     top: 15rem;
     right: 80rem;
+
+    @include respond(big-desktop) {
+        top: 20rem;
+        right: 90rem;
+    }
+
+    @include respond(tab-land) {
+        right: 70rem;
+    }
+
+    @include respond(tab-port) {
+        top: 25rem;
+        right: 65rem;
+    }
 }
 
 .rectangulo-azul-invertido {
@@ -35,6 +82,20 @@
     top: 79.4rem;
     background-color: $secondary-color;
     right: 80rem;
+
+    @include respond(big-desktop) {
+        top: 84.4rem;
+        right: 90rem;
+    }
+
+    @include respond(tab-land) {
+        right: 70rem;
+    }
+
+    @include respond(tab-port) {
+        top: 89.4rem;
+        right: 65rem;
+    }
 }
 
 .rectangulo-naranja-sec {
@@ -42,13 +103,23 @@
     background-color: $primary-color;
     top: 15rem;
     right: 10rem;
+
+    @include respond(tab-port) {
+        top: 25rem;
+        right: 5rem;
+    }
 }
 
 .rectangulo-naranja-invertido-sec {
     transform: rotate(315deg);
-    top: 79.4rem;
     background-color: $primary-color;
+    top: 79.4rem;
     right: 10rem;
+
+    @include respond(tab-port) {
+        top: 89.4rem;
+        right: 5rem;
+    }
 }
 
 .rectangulo-azul-sec {
@@ -56,31 +127,42 @@
     background-color: $secondary-color;
     top: 15rem;
     right: -10rem;
+
+    @include respond(tab-port) {
+        top: 25rem;
+        right: -20rem;
+    }
 }
 
 .rectangulo-azul-invertido-sec {
     transform: rotate(315deg);
-    top: 79.4rem;
     background-color: $secondary-color;
+    top: 79.4rem;
     right: -10rem;
+
+    @include respond(tab-port) {
+        top: 89.4rem;
+        right: -20rem;
+    }
 }
 
 .login {
     position: absolute;
     width: 35rem;
-    // width: 25%;
-    // height: 80%;
     height: 53rem;
     border-radius: .4rem;
     background-color: $color-white;
-    // box-shadow: .1rem .1rem 1rem .1rem $color-shadow;
     @include shadowBox;
     top: 50%;
     left: 50%;
     z-index: 10;
-
+    
     transform: translate(-50%, -50%); 
     
+    @include respond(tab-port) {
+        height: 55rem;
+    }
+
     &__logo-box {
         display: block;
         text-align: center;
