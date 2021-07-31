@@ -2,13 +2,13 @@
     background-color: $color-white;
     flex: 1;
 
-    @include respond(tab-port) {
-        margin-bottom: 20rem;
-    }
+    // @include respond(tab-port) {
+    //     margin-bottom: 20rem;
+    // }
 
-    @include respond(phone) {
-        margin-bottom: 15rem;
-    }
+    // @include respond(phone) {
+    //     margin-bottom: 15rem;
+    // }
 
 
 }

@@ -4,7 +4,66 @@
     @include shadowBox;
   }
 
+  &-link {
+    text-decoration: none; 
+    color: $color-black;
+  }
+
+  &-option {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    transition: box-shadow .2s ease-out;
+
+    @include respond(tab-port) {
+      align-items: center;
+    }
+
+    &:hover &__icon {
+      stroke: $primary-color;
+    }
+
+    &:hover &_text {
+      color: $color-black;
+    }
+
+    &__header {
+      flex-basis: 1;
+      padding-bottom: .5rem;      
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      @include respond(tab-port) {
+        justify-content: center;
+      }
+
+    }
+
+    &__icon {
+      width: 5rem;
+      height: 5rem;
+      fill: $color-white;
+      stroke: $secondary-color; 
+      align-items: center;
   
+      transition: stroke .2s ease-out; 
+    }
+
+    &__text {
+      margin-left: 1.2rem;
+      
+      transition: color .2s ease-out;
+
+      @include respond(tab-port) {
+        font-size: .95rem;
+      }
+    }
+  }
 
   &-shadowed {
     display: flex;
@@ -18,20 +77,21 @@
     &:hover &__icon {
       stroke: $primary-color;
     }
+
+    &__icon {
+      width: 4.5rem;
+      height: 4.5rem;
+      fill: $color-white;
+      stroke: $secondary-color; 
+  
+      transition: stroke .2s ease-out;
+    }
   }
 
-  &-shadowed__icon {
-    width: 4.5rem;
-    height: 4.5rem;
-    fill: $color-white;
-    stroke: $secondary-color; 
-
-    transition: stroke .2s ease-out;
-  }
 
 }
 
 .ups-filled {
-  width: 3.7rem;
-  height: 3.7rem;  
+  width: 3.6rem;
+  height: 3.6rem;  
 }
