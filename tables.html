@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intranet Afimex - Inicio</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/splide-2.4.21/splide.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/splide-2.4.21/splide.min.js"></script>
+  <script src="js/splide-2.4.21/main.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="img/afimex-logo-header.png" alt="afimex logo">
+
+    <form action="index.html" class="search">
+      <input class="search__input" type="text" placeholder="Búsqueda en intranet...">
+      <button class="search__button" type="submit">
+        <svg class="search__icon">
+          <use xlink:href="img/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <div class="user-nav">
+      <span class="user-nav__username">PVALLEJO</span>
+      <svg class="user-nav__arrow">
+        <use xlink:href="img/sprite.svg#icon-chevron"></use>
+      </svg>
+      <ul class="user-nav__list">
+        <li class="user-nav__list-item">
+          <form action="#" class="logout">
+            <button class="logout__button" type="submit">
+              Salir
+              <svg class="logout__icon">
+                <use xlink:href="img/sprite.svg#icon-logout"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+      <div class="user-nav__options-container">
+      </div>
+    </div>
+
+    <!-- <div class="logout-container">
+      <form action="index.html" class="logout">
+        <button class="logout__button" type="button">
+          Salir
+          <svg class="logout__icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </button>
+      </form>
+    </div> -->
+  </header>
+  <div class="flex-container">
+    <nav class="sidebar">
+      <ul id="sidebar" class="sidebar-nav">
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-bill"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Administración</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-xcustomer"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Experiencia y Servicio al Cliente</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-commercial"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Comercial</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-improvement"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Mejora continua</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-ops"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Operaciones</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-user"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Recursos Humanos</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link icon-ti">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-ti"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">TI</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon icon-afimex">
+              <use xlink:href="img/sprite.svg#icon-afimex"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Servicios Afimex</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-ups"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Servicios UPS</span>
+          </a>
+        </li>
+        <li class="sidebar-nav__item">
+          <a href="#" class="sidebar-nav__link">
+            <svg class="sidebar-nav__link-icon">
+              <use xlink:href="img/sprite.svg#icon-settings"></use>
+            </svg>
+            <span class="sidebar-nav__link-text">Administración Intranet</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main class="main-content p-4">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+
+    </main>
+  </div>
+
+</body>
+
+</html>
