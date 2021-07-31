@@ -7751,6 +7751,47 @@ body {
 .card:hover, .card:active {
   box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
 
+.card-link {
+  text-decoration: none;
+  color: #000000; }
+
+.card-option {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  transition: box-shadow .2s ease-out; }
+  @media only screen and (max-width: 56.25em) {
+    .card-option {
+      align-items: center; } }
+  .card-option:hover .card-option__icon {
+    stroke: #FF6B00; }
+  .card-option:hover .card-option_text {
+    color: #000000; }
+  .card-option__header {
+    flex-basis: 1;
+    padding-bottom: .5rem; }
+  .card-option__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .card-option__content {
+        justify-content: center; } }
+  .card-option__icon {
+    width: 5rem;
+    height: 5rem;
+    fill: #ffffff;
+    stroke: #005CB9;
+    align-items: center;
+    transition: stroke .2s ease-out; }
+  .card-option__text {
+    margin-left: 1.2rem;
+    transition: color .2s ease-out; }
+    @media only screen and (max-width: 56.25em) {
+      .card-option__text {
+        font-size: .95rem; } }
+
 .card-shadowed {
   display: flex;
   flex-direction: row;
@@ -7760,17 +7801,16 @@ body {
   transition: box-shadow .2s ease-out; }
   .card-shadowed:hover .card-shadowed__icon {
     stroke: #FF6B00; }
-
-.card-shadowed__icon {
-  width: 4.5rem;
-  height: 4.5rem;
-  fill: #ffffff;
-  stroke: #005CB9;
-  transition: stroke .2s ease-out; }
+  .card-shadowed__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: #ffffff;
+    stroke: #005CB9;
+    transition: stroke .2s ease-out; }
 
 .ups-filled {
-  width: 3.7rem;
-  height: 3.7rem; }
+  width: 3.6rem;
+  height: 3.6rem; }
 
 #comments-body {
   visibility: hidden; }
@@ -8101,12 +8141,6 @@ body {
 .main-content {
   background-color: #ffffff;
   flex: 1; }
-  @media only screen and (max-width: 56.25em) {
-    .main-content {
-      margin-bottom: 20rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .main-content {
-      margin-bottom: 15rem; } }
 
 .sidebar {
   background-color: #FF6B00;
