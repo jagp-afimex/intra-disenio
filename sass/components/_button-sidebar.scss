@@ -25,6 +25,10 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        // @include respond(tab-port) {
+        //     padding: 0;
+        // }
         
         &-icon {
             width: 3rem;
@@ -51,12 +55,13 @@
             margin-top: .5rem;
 
             @include respond(tab-port) {
-                font-size: 1.2rem;
-            }
-
-            @include respond(phone) {
+                // font-size: 1.2rem;
                 display: none;
             }
+
+            // @include respond(phone) {
+            //     display: none;
+            // }
         }
 
         &:hover {

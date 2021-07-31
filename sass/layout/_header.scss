@@ -14,9 +14,10 @@
         height: 7vh;
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
+        padding: 1.2rem 0rem;
         flex-wrap: wrap;
-        height: 12vh;
+        height: 15vh;
         align-content: space-around;
     }
 
@@ -25,7 +26,7 @@
         margin-left: 0;
         margin-left: 1rem;
         
-        @include respond(phone) {
+        @include respond(tab-port) {
             width: 10rem;
         }
     }

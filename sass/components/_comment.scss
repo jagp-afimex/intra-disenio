@@ -23,6 +23,7 @@
 
     @include respond(phone) { 
         width: 100%;
+        box-shadow: none;
     }
 
     &__button {
