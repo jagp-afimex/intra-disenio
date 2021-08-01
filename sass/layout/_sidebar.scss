@@ -1,11 +1,4 @@
 .sidebar {
-    // background-color: $primary-color;
-    // flex: 0 0 9%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // overflow-y: auto;
-    // height: 91vh;
 
     background-color: $primary-color;
     display: flex;
@@ -18,7 +11,6 @@
     height: 100vh;  
 
     @include respond(big-desktop) {
-        // height: 92vh;
         position: sticky;
         top: 0;
     }
@@ -27,26 +19,30 @@
         height: 100vh;
     }
 
+    @include respond(phone) {
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: auto;
+        z-index: 10;
+    }
+
     @include respond(tab-port) {
+
         order: 1;
+        flex-grow: 1;
+        margin-top: 30%;
         width: 100vw;
         height: auto;
 
-        padding: 0;
-        margin: 0;
-        // position: fixed;
-        bottom: 0;
-        left: 0;
-
-        overflow-y: scroll;
-
-        z-index: 10;
     }
 
     &-nav {
         font-size: 1.4rem;
         list-style: none;
         padding: 0;
+
 
         @include respond(tab-port) {
             display: flex;
@@ -59,21 +55,6 @@
         @include respond(phone) { 
             justify-content: stretch;
         }
-
-        // &:hover {
-        //     // animation: increaseSidebar 1.3s ease-out;
-        //     // width: 15rem;
-        //     // height: 100rem;
-        //     // display: inline;
-        // }
-        
-        // &:hover > &__item &__link &__link-text {
-        //     // animation: moveInLeft 1.3s ease-out;
-        //     // display: inline;
-        //     // visibility: visible;
-        //     // font-size: 1rem;
-    
-        // }
     }
 
 

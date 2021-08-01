@@ -7530,10 +7530,8 @@ textarea.form-control-lg {
     transform: translate(0%); } }
 
 @keyframes containerCarrouselMovil {
-  from {
-    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
-  to {
-    box-shadow: none; } }
+  from { }
+  to { } }
 
 @keyframes moveCarrousel {
   from {
@@ -7546,7 +7544,8 @@ textarea.form-control-lg {
   from {
     transform: scale(100%); }
   to {
-    transform: scale(85%); } }
+    transform: scale(85%);
+    z-index: -10; } }
 
 @keyframes showComments {
   from {
@@ -7556,11 +7555,10 @@ textarea.form-control-lg {
 
 @keyframes showCommentsMovil {
   from {
-    transform: translateY(0%);
     z-index: -10; }
   to {
-    transform: translateY(75%);
-    padding-bottom: 10rem;
+    visibility: visible;
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
     z-index: 0; } }
 
 @keyframes containerCarrouselBack {
@@ -7571,13 +7569,7 @@ textarea.form-control-lg {
     box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
     transform: translate(50%); } }
 
-@keyframes containerCarrouselBackMovil {
-  from {
-    box-shadow: none; }
-  to {
-    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); } }
-
-@keyframes moveCarrouselBack {
+@keyframes containerCarrouselBackMovil {}@keyframes moveCarrouselBack {
   from {
     transform: translate(0%);
     transform: scale(75%); }
@@ -7587,9 +7579,11 @@ textarea.form-control-lg {
 
 @keyframes moveCarrouselBackMovil {
   from {
+    z-index: -10;
     transform: scale(85%); }
   to {
-    transform: scale(100%); } }
+    transform: scale(100%);
+    z-index: 0; } }
 
 @keyframes showCommentsBack {
   from {
@@ -7601,12 +7595,10 @@ textarea.form-control-lg {
 
 @keyframes showCommentsBackMovil {
   from {
-    transform: translateY(75%);
-    padding-bottom: 10rem;
+    visibility: visible;
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16);
     z-index: 0; }
   to {
-    transform: translateY(0%);
-    box-shadow: none;
     z-index: -10; } }
 
 *,
@@ -7691,9 +7683,14 @@ body {
     background-color: #005CB9; }
   @media only screen and (max-width: 56.25em) {
     .sidebar-nav__item {
-      width: calc(inherit / 10wh);
       margin: 0;
       padding: 2rem; } }
+  @media only screen and (max-width: 75em) {
+    .sidebar-nav__item {
+      padding: 1rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar-nav__item {
+      padding: .5rem 2rem; } }
 
 .sidebar-nav__link {
   text-decoration: none;
@@ -7962,7 +7959,8 @@ body {
   @media only screen and (max-width: 37.5em) {
     .carrousel {
       transform: translate(13%);
-      padding-bottom: 3rem; } }
+      width: 100%;
+      height: auto; } }
 
 .splide__slide__container img {
   width: 100%;
@@ -8019,9 +8017,6 @@ body {
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
     transition: .2s all; }
-    @media only screen and (max-width: 37.5em) {
-      .search__input {
-        padding: .7rem 1rem; } }
     .search__input:focus {
       outline: none;
       color: black;
@@ -8057,7 +8052,9 @@ body {
     fill: transparent; }
 
 .flex-container {
-  display: flex; }
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap; }
   @media only screen and (max-width: 56.25em) {
     .flex-container {
       flex-direction: column; } }
@@ -8070,16 +8067,20 @@ body {
   align-items: center; }
   @media only screen and (min-width: 112.5em) {
     .header {
-      height: 8vh; } }
+      height: 10vh; } }
   @media only screen and (max-width: 75em) {
     .header {
-      height: 7vh; } }
+      height: 8vh; } }
   @media only screen and (max-width: 56.25em) {
     .header {
-      padding: 1.2rem 0rem;
       flex-wrap: wrap;
-      height: 15vh;
+      padding: 3rem 0rem;
+      height: 10%;
       align-content: space-around; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 2rem 0rem;
+      height: 10%; } }
   .header__logo {
     width: 12rem;
     margin-left: 0;
@@ -8109,22 +8110,26 @@ body {
     list-style: none;
     margin: 0;
     background-color: #FF6B00;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     position: relative;
-    top: 3.5rem;
-    right: 10rem;
-    display: none; }
+    top: 4rem;
+    right: 10rem; }
+    @media only screen and (max-width: 75em) {
+      .user-nav__list {
+        top: 6rem;
+        right: 1rem; } }
     .user-nav__list-item {
       display: inline-block;
-      font-size: 1.4rem;
-      font-weight: 400;
+      font-size: 1.2rem;
+      font-weight: 600;
       color: #ffffff; }
 
 .logout__button {
+  font-size: 1.4rem;
+  font-weight: 600;
   color: #ffffff;
   border: none;
   background-color: transparent;
-  padding-bottom: 1rem;
   display: flex;
   align-items: center; }
 
@@ -8136,9 +8141,30 @@ body {
   stroke: #ffffff;
   stroke-width: .1rem; }
 
+.footer {
+  background-color: #FF6B00;
+  color: #ffffff;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: .1rem 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      visibility: hidden; } }
+
 .main-content {
   background-color: #ffffff;
   flex: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .main-content {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 89%; } }
+  @media only screen and (max-width: 37.5em) {
+    .main-content {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0%; } }
 
 .sidebar {
   background-color: #FF6B00;
@@ -8157,17 +8183,21 @@ body {
   @media only screen and (max-width: 75em) {
     .sidebar {
       height: 100vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar {
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      height: auto;
+      z-index: 10; } }
   @media only screen and (max-width: 56.25em) {
     .sidebar {
       order: 1;
+      flex-grow: 1;
+      margin-top: 30%;
       width: 100vw;
-      height: auto;
-      padding: 0;
-      margin: 0;
-      bottom: 0;
-      left: 0;
-      overflow-y: scroll;
-      z-index: 10; } }
+      height: auto; } }
   .sidebar-nav {
     font-size: 1.4rem;
     list-style: none;

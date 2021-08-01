@@ -8,9 +8,17 @@
         }
 
         @include respond(tab-port) {
-            width: calc(inherit / 10wh);
+            // width: calc(inherit / 10wh);
             margin: 0;
             padding: 2rem;
+        }
+
+        @include respond(tab-land) {
+            padding: 1rem 2rem;
+        }
+
+        @include respond(phone) {
+            padding: .5rem 2rem;
         }
 
     }

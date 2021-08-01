@@ -21,9 +21,9 @@
 
         transition: .2s all;
 
-        @include respond(phone) {
-            padding: .7rem 1rem;
-        }
+        // @include respond(tab-port) {
+        //     padding: .7rem 1rem;
+        // }
 
         &:focus {
             outline: none;

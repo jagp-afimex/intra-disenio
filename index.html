@@ -43,24 +43,24 @@
     </form>
 
     <div class="user-nav">
-      <span class="user-nav__username">PVALLEJO</span>
+      <!-- <span class="user-nav__username">PVALLEJO</span>
       <svg class="user-nav__arrow">
         <use xlink:href="img/sprite.svg#icon-chevron"></use>
-      </svg>
-      <ul class="user-nav__list">
+      </svg> -->
+      <form action="#" class="logout">
+        <button class="logout__button" type="submit">
+          Salir
+          <svg class="logout__icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </button>
+      </form>
+      <!-- <ul class="user-nav__list">
         <li class="user-nav__list-item">
-          <form action="#" class="logout">
-            <button class="logout__button" type="submit">
-              Salir
-              <svg class="logout__icon">
-                <use xlink:href="img/sprite.svg#icon-logout"></use>
-              </svg>
-            </button>
-          </form>
         </li>
-      </ul>
-      <div class="user-nav__options-container">
-      </div>
+      </ul> -->
+      <!-- <div class="user-nav__options-container">
+      </div> -->
     </div>
 
     <!-- <div class="logout-container">
@@ -251,77 +251,6 @@
         </div>
       </div>
 
-      <!-- <div class="row">
-        <div class="col-md-6">
-          <div id="carrousel-container">
-            <div id="carrousel" class="carrousel">
-              <div class="splide">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="splide__slide__container">
-                        <img src="img/afimex-logo-header.png" alt="">
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="splide__slide__container">
-                        <img src="img/comunicado.png" alt="">
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="splide__slide__container">
-                        <img src="img/afimex-logo.png" alt="">
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div id="comments" class="comments px-3 py-2">
-              <button id="showComments" type="button" data-clicked="false" class="comments__button">
-                <svg class="comments__button-icon">
-                  <use xlink:href="img/sprite.svg#icon-comments"></use>
-                </svg>
-              </button>
-              <div class="row">
-                <div class="col-md-12 py-2">
-                  <h4 class="h4 text-secondary">Comentarios - Día de Muertos</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 comments__container">
-                  <div class="comments__item">
-                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
-                    <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
-                  </div>
-                  <div class="comments__item">
-                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
-                    <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
-                  </div>
-                  <div class="comments__item">
-                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
-                    <p class="comments__item-content">Hola, comentario día de Muertos nuemro unos de los comentarios.</p>
-                  </div>
-                  <div class="comments__item">
-                    <span class="comments__item-author">Arnulfo GP  20 Oct 2021 12:32p.m.</span>
-                    <p class="comments__item-content">sssssswwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwssssssssssssssssssssssssssssssssssssssss sssssssdddddddddddddddddddddddddddddddHola, comentario día de Muertos nuemro unos de los comentarios.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <form class="comments__new" action="#">
-                    <span class="comments__item-author">Pedro Vallejo</span>
-                    <input class="comments__new-input" type="text" placeholder="Escribe algo...">
-                    <button class="btn-comments">Comentar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      
       <div class="row">
         <div class="col-md-12">
           <h3 class="h3 text-center text-secondary pb-4 pt-5">Enlaces destacados</h3>
@@ -505,10 +434,12 @@
           </a>
         </div>
       </div>
-
-
-
     </main>
+    <div class="footer">
+      <span>PVALLEJO - pedro.vallejo@afimex.mx</span>
+      <span>Cargo y Porteo del Golfo</span>
+      <span>Version 0.1.13 - es-MX </span>
+    </div>
   </div>
 
   <script src="js/home.js"></script>

@@ -1,6 +1,19 @@
 .main-content {
     background-color: $color-white;
     flex: 1;
+    
+    @include respond(tab-port) {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 89%;
+    }
+
+    @include respond(phone) {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        // background-color: rebeccapurple;
+    }
 
     // @include respond(tab-port) {
     //     margin-bottom: 20rem;

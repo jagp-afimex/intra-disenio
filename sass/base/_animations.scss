@@ -9,6 +9,7 @@
     opacity: 1;
   }
 }
+
 @keyframes containerCarrousel {
   from {
     transform: translate(50%);
@@ -21,10 +22,10 @@
 
 @keyframes containerCarrouselMovil {
   from {
-    @include shadowBox;
+    // @include shadowBox;
   }
   to {
-    box-shadow: none;
+    // box-shadow: none;
   }
 }
 
@@ -44,6 +45,7 @@
   }
   to {
     transform: scale(85%);
+    z-index: -10;
   }
 }
 
@@ -58,12 +60,14 @@
 
 @keyframes showCommentsMovil {
   from {
-    transform: translateY(0%);
+    // transform: translateY(0%);
     z-index: -10;
   }
   to {
-    transform: translateY(75%);
-    padding-bottom: 10rem;
+    // transform: translateY(75%);
+    // padding-bottom: 10rem;
+    visibility: visible;
+    @include shadowBox;
     z-index: 0;
   }
 }
@@ -80,12 +84,7 @@
 }
 
 @keyframes containerCarrouselBackMovil {
-  from {
-    box-shadow: none;
-  }
-  to {
-    @include shadowBox;
-  }
+
 }
 
 @keyframes moveCarrouselBack {
@@ -102,10 +101,12 @@
 
 @keyframes moveCarrouselBackMovil {
   from {
+    z-index: -10;
     transform: scale(85%);
   }
   to {
     transform: scale(100%);
+    z-index: 0;
   }
 }
 
@@ -123,13 +124,11 @@
 
 @keyframes showCommentsBackMovil {
   from {
-    transform: translateY(75%);
-    padding-bottom: 10rem;
+    visibility: visible;
+    @include shadowBox;
     z-index: 0;
   }
   to {
-    transform: translateY(0%);
-    box-shadow: none;
     z-index: -10;
   }
 }

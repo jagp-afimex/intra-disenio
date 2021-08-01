@@ -1,5 +1,7 @@
 .flex-container {
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 
     @include respond(tab-port) {
         flex-direction: column;

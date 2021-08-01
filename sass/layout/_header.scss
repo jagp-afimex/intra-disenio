@@ -7,19 +7,25 @@
     align-items: center;
     
     @include respond(big-desktop) {
-        height: 8vh;
+        height: 10vh;
     }
 
     @include respond(tab-land) {
-        height: 7vh;
+        height: 8vh;
     }
 
     @include respond(tab-port) {
-        padding: 1.2rem 0rem;
         flex-wrap: wrap;
-        height: 15vh;
+        padding: 3rem 0rem;
+        height: 10%;
         align-content: space-around;
     }
+
+    @include respond(phone) {
+        padding: 2rem 0rem;
+        height: 10%;
+    }
+
 
     &__logo {
         width: 12rem;
@@ -37,8 +43,6 @@
     display: flex;
     align-items: center;
     margin-right: 1rem;
-
-
 
     &__username {
         font-size: 1.4rem;
@@ -61,16 +65,22 @@
         list-style: none;
         margin: 0;
         background-color: $primary-color;    
-        padding: 1rem 2rem;
+        padding: .5rem 2rem;
         position: relative;
-        top: 3.5rem;
+        // width: 100%;
+        top: 4rem;
         right: 10rem;
-        display: none;
+        // display: none;
+
+        @include respond(tab-land) {
+            top: 6rem;
+            right: 1rem;
+        }
 
         &-item {
             display: inline-block;
-            font-size: 1.4rem;
-            font-weight: $regular;
+            font-size: 1.2rem;
+            font-weight: $semi-bold;
             color: $color-white;    
         }
     }
@@ -78,10 +88,12 @@
 
 .logout {
     &__button {
+        font-size: 1.4rem;
+        font-weight: $semi-bold;
         color: $color-white;    
         border: none;
         background-color: transparent;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
         display: flex;
         align-items: center;
 
@@ -97,5 +109,18 @@
         fill: transparent;
         stroke: $color-white;
         stroke-width: .1rem;
+    }
+}
+
+.footer {
+    background-color: $primary-color;
+    color: $color-white;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: .1rem 0rem;
+
+    @include respond(tab-port) {
+        visibility: hidden;
     }
 }

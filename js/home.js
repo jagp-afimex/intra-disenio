@@ -11,7 +11,6 @@ showCommentsButton.addEventListener("click", () => {
   {
     setAnimationsToComments(window.screen.width, true);
     commentsBodyElement.style.visibility = "hidden";
-    // commentsElement.style.boxShadow = "none";
     showCommentsButton.style.backgroundColor = "#005CB9";
     showCommentsButton.dataset.clicked = "false";    
   }
@@ -19,7 +18,6 @@ showCommentsButton.addEventListener("click", () => {
   {
     setAnimationsToComments(window.screen.width, false);
     commentsBodyElement.style.visibility = "visible";
-    // commentsElement.style.boxShadow = "0rem .2rem .5rem .2rem rgba(0, 0, 0, .16)";
     showCommentsButton.style.backgroundColor = "#FF6B00";
     showCommentsButton.dataset.clicked = "true";
   }
