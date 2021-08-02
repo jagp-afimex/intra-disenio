@@ -7918,17 +7918,17 @@ body {
         outline: none;
         border: 0.1rem solid #005CB9; }
 
-.form__group {
+.form-login__group {
   margin: 2.5rem 3rem; }
   @media only screen and (max-width: 56.25em) {
-    .form__group {
+    .form-login__group {
       margin: 2rem 3.5rem; } }
 
-.form__box-icon {
+.form-login__box-icon {
   display: inline-block;
   position: absolute; }
 
-.form__icon {
+.form-login__icon {
   width: 2rem;
   height: 2rem;
   fill: transparent;
@@ -7936,14 +7936,14 @@ body {
   stroke-width: .1rem;
   vertical-align: baseline; }
 
-.form__label {
+.form-login__label {
   display: inline;
   vertical-align: middle;
   font-size: 1.5rem;
   color: #005CB9;
   margin-left: 2.5rem; }
 
-.form__input {
+.form-login__input {
   display: block;
   border: 0.1rem solid #005CB9;
   border-radius: .4rem;
@@ -7951,9 +7951,9 @@ body {
   width: 100%;
   transition: all .2s; }
   @media only screen and (max-width: 56.25em) {
-    .form__input {
+    .form-login__input {
       font-size: 1.2rem; } }
-  .form__input:focus {
+  .form-login__input:focus {
     outline: none;
     border: 0.1rem solid #FF6B00; }
 
