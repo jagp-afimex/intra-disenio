@@ -7802,16 +7802,16 @@ body {
       .card-option__text {
         font-size: .95rem; } }
 
-.card-shadowed {
+.card-destacado {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
   transition: box-shadow .2s ease-out; }
-  .card-shadowed:hover .card-shadowed__icon {
+  .card-destacado:hover .card-destacado__icon {
     stroke: #FF6B00; }
-  .card-shadowed__icon {
+  .card-destacado__icon {
     width: 4.5rem;
     height: 4.5rem;
     fill: #ffffff;
