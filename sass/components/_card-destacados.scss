@@ -1,9 +1,5 @@
 .card {
 
-  &:hover, &:active {
-    @include shadowBox;
-  }
-
   &-link {
     text-decoration: none; 
     color: $color-black;
@@ -14,6 +10,10 @@
     padding: 2rem;
     justify-content: space-around;
     transition: box-shadow .2s ease-out;
+
+    &:hover, &:active {
+      @include shadowBox;
+    }
 
     @include respond(tab-port) {
       align-items: center;
@@ -73,6 +73,10 @@
     padding: 2rem;
 
     transition: box-shadow .2s ease-out;
+
+    &:hover, &:active {
+      @include shadowBox;
+    }
 
     &:hover &__icon {
       stroke: $primary-color;

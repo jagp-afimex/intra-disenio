@@ -21,9 +21,10 @@
 
         transition: .2s all;
 
-        // @include respond(tab-port) {
-        //     padding: .7rem 1rem;
-        // }
+        // este breakpoint se agregó
+        @include respond(big-desktop) {
+            padding: .5rem 1rem;
+        }
 
         &:focus {
             outline: none;

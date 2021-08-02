@@ -7758,9 +7758,6 @@ body {
 .sidebar-nav .icon-afimex + span {
   margin-top: -1rem; }
 
-.card:hover, .card:active {
-  box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
-
 .card-link {
   text-decoration: none;
   color: #000000; }
@@ -7770,6 +7767,8 @@ body {
   padding: 2rem;
   justify-content: space-around;
   transition: box-shadow .2s ease-out; }
+  .card-option:hover, .card-option:active {
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
   @media only screen and (max-width: 56.25em) {
     .card-option {
       align-items: center; } }
@@ -7809,6 +7808,8 @@ body {
   align-items: center;
   padding: 2rem;
   transition: box-shadow .2s ease-out; }
+  .card-destacado:hover, .card-destacado:active {
+    box-shadow: 0rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0.16); }
   .card-destacado:hover .card-destacado__icon {
     stroke: #FF6B00; }
   .card-destacado__icon {
@@ -8033,6 +8034,9 @@ body {
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
     transition: .2s all; }
+    @media only screen and (min-width: 112.5em) {
+      .search__input {
+        padding: .5rem 1rem; } }
     .search__input:focus {
       outline: none;
       color: black;
@@ -8083,7 +8087,7 @@ body {
   align-items: center; }
   @media only screen and (min-width: 112.5em) {
     .header {
-      height: 10vh; } }
+      height: 6vh; } }
   @media only screen and (max-width: 75em) {
     .header {
       height: 8vh; } }
@@ -8201,7 +8205,8 @@ body {
   @media only screen and (min-width: 112.5em) {
     .sidebar {
       position: sticky;
-      top: 0; } }
+      top: 0;
+      flex-basis: 7%; } }
   @media only screen and (max-width: 75em) {
     .sidebar {
       height: 100vh; } }
