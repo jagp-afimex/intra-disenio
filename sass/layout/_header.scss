@@ -118,9 +118,21 @@
     flex: 0 0 100%;
     display: flex;
     justify-content: space-around;
-    padding: .1rem 0rem;
+    padding: .5rem 0rem;
 
     @include respond(tab-port) {
         visibility: hidden;
+    }
+
+    &-privacy:link,
+    &-privacy:visited {
+        color: $color-white;
+        text-decoration: none;
+
+        transition: border-bottom .2s ease-out;
+
+        &:hover {
+            border-bottom: .1rem solid $color-white;
+        }
     }
 }

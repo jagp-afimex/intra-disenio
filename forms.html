@@ -43,27 +43,36 @@
     </form>
 
     <div class="user-nav">
-      <span class="user-nav__username">PVALLEJO</span>
+      <!-- <span class="user-nav__username">PVALLEJO</span>
       <svg class="user-nav__arrow">
         <use xlink:href="img/sprite.svg#icon-chevron"></use>
-      </svg>
-      <ul class="user-nav__list">
+      </svg> -->
+      <form action="#" class="logout">
+        <button class="logout__button" type="submit">
+          Salir
+          <svg class="logout__icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </button>
+      </form>
+      <!-- <ul class="user-nav__list">
         <li class="user-nav__list-item">
-          <form action="#" class="logout">
-            <button class="logout__button" type="submit">
-              Salir
-              <svg class="logout__icon">
-                <use xlink:href="img/sprite.svg#icon-logout"></use>
-              </svg>
-            </button>
-          </form>
         </li>
-      </ul>
-      <div class="user-nav__options-container">
-      </div>
+      </ul> -->
+      <!-- <div class="user-nav__options-container">
+      </div> -->
     </div>
 
-
+    <!-- <div class="logout-container">
+      <form action="index.html" class="logout">
+        <button class="logout__button" type="button">
+          Salir
+          <svg class="logout__icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </button>
+      </form>
+    </div> -->
   </header>
   <div class="flex-container">
     <nav class="sidebar">
@@ -171,7 +180,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form> -->
 
-      <form>
+      <!-- <form>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -188,11 +197,399 @@
           <label for="formFile" class="form-label">Default file input example</label>
           <input class="form-control" type="file" id="formFile">
         </div>
+      </form> -->
+
+      <!-- <form action="#">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <hr>
+        <select class="form-select" aria-label="Disabled select example" disabled>
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </form> -->
+
+      <!-- <form action="#">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Indeterminate checkbox
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+          <label class="form-check-label" for="flexCheckDisabled">
+            Disabled checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+          <label class="form-check-label" for="flexCheckCheckedDisabled">
+            Disabled checked checkbox
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Default radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Default checked radio
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+          <label class="form-check-label" for="flexRadioDisabled">
+            Disabled radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+          <label class="form-check-label" for="flexRadioCheckedDisabled">
+            Disabled checked radio
+          </label>
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+          <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+          <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+          <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+        </div>
+      </form> -->
+
+      <!-- <form action="#">
+        <label for="customRange1" class="form-label">Example range</label>
+        <input type="range" class="form-range" id="customRange1">
+
+        <label for="disabledRange" class="form-label">Disabled range</label>
+        <input type="range" class="form-range" id="disabledRange" disabled>
+
+        <label for="customRange2" class="form-label">Example range</label>
+        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+
+        <label for="customRange3" class="form-label">Example range</label>
+        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+      </form> -->
+
+      <!-- <form action="#">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+        
+        <label for="basic-url" class="form-label">Your vanity URL</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">.00</span>
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div>
+        
+        <div class="input-group">
+          <span class="input-group-text">With textarea</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div>
+        
+        <div class="input-group">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with radio button">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text">First and last name</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <span class="input-group-text">0.00</span>
+          <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        </div>
+        
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+          <span class="input-group-text">$</span>
+          <span class="input-group-text">0.00</span>
+        </div>
+
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+        </div>
+        
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+        </div>
+        
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+          <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+        
+        <div class="input-group">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action before</a></li>
+            <li><a class="dropdown-item" href="#">Another action before</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <div class="input-group mb-3">
+          <button type="button" class="btn btn-outline-secondary">Action</button>
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+        </div>
+        
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+          <button type="button" class="btn btn-outline-secondary">Action</button>
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </form> -->
+
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
       </form>
 
     </main>
+    <div class="footer">
+      <span>PVALLEJO - pedro.vallejo@afimex.mx</span>
+      <span>Cargo y Porteo del Golfo - <a class="footer-privacy" href="#">Aviso de Privacidad</a></span>
+      <span>Version 0.1.13 - es-MX </span>
+    </div>
   </div>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+  </script>
 </body>
 
 </html>

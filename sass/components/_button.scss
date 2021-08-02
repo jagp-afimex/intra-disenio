@@ -41,5 +41,21 @@
             font-size: 1rem;
             border-radius: .2rem;
         }
+
+    }
+
+    &-outline-primary {
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &-primary {
+        color: $color-white;
+
+        &:hover {
+            color: $color-white;
+        }
     }
 }
