@@ -34,8 +34,8 @@
     transform: scale(100%);
   }
   to {
-    @include shadowBox;
-    transform: scale(75%);
+    // @include shadowBox;
+    transform: scale(30%);
   }
 }
 
@@ -52,9 +52,11 @@
 @keyframes showComments {
   from {
     transform: translate(0%);
+
   }
   to {
     transform: translate(90%);
+    border: .1rem solid $secondary-color;
   }
 }
 
@@ -78,7 +80,7 @@
     transform: translate(0%)
   }
   to {
-    @include shadowBox;
+    // @include shadowBox;
     transform: translate(50%);
   }
 }

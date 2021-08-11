@@ -1,7 +1,7 @@
 const sidebarElement = document.getElementById("sidebar");
 
 const carrouselContainerElement = document.getElementById("carrousel");
-const splideCarrouselElement = document.getElementById("splide-carrousel");
+const splideCarrouselElement = document.getElementById("bsCarrousel");
 const commentsElement = document.getElementById("comments");
 const commentsBodyElement = document.getElementById("comments-body");
 const showCommentsButton = document.getElementById("showComments");
@@ -36,9 +36,9 @@ const setAnimationsToComments = (screenWidth, isActive) => {
   }
   else if (screenWidth > 900 && isActive)
   {
-    carrouselContainerElement.style.animation = "containerCarrouselBack .4s forwards";
-    splideCarrouselElement.style.animation = "moveCarrouselBack .4s forwards";
-    commentsElement.style.animation = "showCommentsBack .4s forwards";
+    carrouselContainerElement.style.animation = "containerCarrouselBackMovil .4s forwards";
+    splideCarrouselElement.style.animation = "moveCarrouselBackMovil .4s forwards";
+    commentsElement.style.animation = "showCommentsBackMovil .4s forwards";
   }
   else if (screenWidth <= 900 && !isActive)
   {
@@ -48,8 +48,8 @@ const setAnimationsToComments = (screenWidth, isActive) => {
   }
   else if (screenWidth > 900 && !isActive)
   {
-    carrouselContainerElement.style.animation = "containerCarrousel .4s forwards";  
-    splideCarrouselElement.style.animation = "moveCarrousel .4s forwards";
-    commentsElement.style.animation = "showComments .4s forwards";
+    carrouselContainerElement.style.animation = "containerCarrouselMovil .4s forwards";  
+    splideCarrouselElement.style.animation = "moveCarrouselMovil .4s forwards";
+    commentsElement.style.animation = "showCommentsMovil .4s forwards";
   }
 };
