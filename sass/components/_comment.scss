@@ -5,14 +5,12 @@
     // experimentacion
     border-radius: .4rem;
     background-color: $color-white;
-    // @include shadowBox;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -10;
-    width: auto;
-    height: inherit;
-    // z-index: 0;
+    width: 100%;
+    height: 100%;
 
     @include respond(phone) { 
         // width: 100%;
@@ -48,24 +46,24 @@
     }
 
     &__container {
-        height: 25vh;
-        background-color: $color-white;
+        height: 24rem;
         border-top-width: .1rem;
         border-top-style: solid;
         border-top-color: $primary-color;
-        overflow: auto;
+        // overflow: auto;
+        overflow-y: scroll;
         padding: 1rem;
 
         @include respond(big-desktop) {
-            height: 100%;
+            height: 30rem;
         }
 
         @include respond(tab-land) {
-            height: 10vh;
+            height: 22rem;
         }
 
         @include respond(tab-port) {
-            height: 8vh;
+            height: 19rem;
         }
 
         @include respond(comments) {
@@ -73,7 +71,7 @@
         }
 
         @include respond(phone) {
-            height: 9vh;
+            height: 7rem;
         }
 
     }

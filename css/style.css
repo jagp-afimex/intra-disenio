@@ -7836,8 +7836,8 @@ body {
   top: 0;
   left: 0;
   z-index: -10;
-  width: auto;
-  height: inherit; }
+  width: 100%;
+  height: 100%; }
   @media only screen and (max-width: 37.5em) {
     .comments {
       box-shadow: none; } }
@@ -7864,28 +7864,27 @@ body {
           width: 1.7rem;
           height: 1.7rem; } }
   .comments__container {
-    height: 25vh;
-    background-color: #ffffff;
+    height: 24rem;
     border-top-width: .1rem;
     border-top-style: solid;
     border-top-color: #FF6B00;
-    overflow: auto;
+    overflow-y: scroll;
     padding: 1rem; }
     @media only screen and (min-width: 112.5em) {
       .comments__container {
-        height: 100%; } }
+        height: 30rem; } }
     @media only screen and (max-width: 75em) {
       .comments__container {
-        height: 10vh; } }
+        height: 22rem; } }
     @media only screen and (max-width: 56.25em) {
       .comments__container {
-        height: 8vh; } }
+        height: 19rem; } }
     @media only screen and (max-width: 767px) {
       .comments__container {
         height: 13vh; } }
     @media only screen and (max-width: 37.5em) {
       .comments__container {
-        height: 9vh; } }
+        height: 7rem; } }
   .comments__item {
     padding: 0;
     color: #000000; }
@@ -7976,42 +7975,6 @@ body {
     .carrousel {
       width: 100%;
       height: auto; } }
-
-.splide__slide__container img {
-  width: 100%;
-  height: auto; }
-
-.splide__arrow-custom {
-  font-size: 1.2rem; }
-
-.splide__arrow-custom-prev {
-  background-color: transparent;
-  fill: #000000; }
-  @media only screen and (max-width: 37.5em) {
-    .splide__arrow-custom-prev {
-      fill: transparent; } }
-
-.splide__arrow-custom-next {
-  background-color: transparent;
-  fill: #000000; }
-  @media only screen and (max-width: 37.5em) {
-    .splide__arrow-custom-next {
-      fill: transparent; } }
-
-.splide__pagination-custom {
-  background-color: transparent; }
-
-.splide__pagination__page {
-  background-color: #005CB9; }
-  @media only screen and (max-width: 37.5em) {
-    .splide__pagination__page {
-      background-color: transparent; } }
-
-.splide__pagination__page.is-active {
-  background-color: #FF6B00; }
-  @media only screen and (max-width: 37.5em) {
-    .splide__pagination__page.is-active {
-      background-color: transparent; } }
 
 .search {
   flex: 0 0 40%;
